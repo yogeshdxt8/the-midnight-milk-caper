@@ -1,7 +1,7 @@
 # The Kid's Glass — Greybox v0.7.4 Engineering Note
 
 **Date:** 2026-11-12  
-**Status:** Defect correction delivered; device validation pending  
+**Status:** Partial owner device validation confirmed; full greybox validation pending  
 **Authority:** D-027 (focused responsive-rescue greybox implementation)
 
 ## Defect observed
@@ -19,9 +19,13 @@ Owner reported that Leo did not appear tappable until the glass reached the end 
 - DOM ID references: 15 checked; no missing references.
 - ZIP package created with `index.html` and README.
 
-## Not yet validated
-- Android Chrome pointer/touch event delivery on a physical device.
-- Actual perceived responsiveness and whether early-slide intervention feels fair.
-- Complete end-to-end rescue and no-input fall/shatter after this correction.
+## Owner validation
+- Owner confirmed that Leo is now tappable during the slide after testing v0.7.4 on Android.
+- This confirms the reported late-only hit-target defect is corrected in the tested scenario.
 
-**Disposition:** v0.7.4 is delivered for owner testing. Greybox gate remains OPEN. This note does not authorize detailed art, production integration or release.
+## Not yet validated
+- Whether early, middle and near-edge taps all produce consistent, immediate rescue.
+- Whether the actionable threshold and rescue window feel fair without repeated tapping.
+- Complete end-to-end no-input fall/shatter and repeatability after this correction.
+
+**Disposition:** The specific Leo hit-target defect is owner-confirmed corrected. Greybox gate remains OPEN. This note does not authorize detailed art, production integration or release.
