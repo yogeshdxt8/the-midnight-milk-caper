@@ -7,7 +7,7 @@ Assessment scope: Frozen v0.5 greybox baseline, engineering diagnostic v3.2.1, f
 
 ## 1. Executive decision
 
-**Recommendation: CONDITIONAL PASS — retain the greybox as the approved interaction/animation candidate, with no further redesign.**
+**Owner disposition: APPROVED — CONDITIONAL PASS.** The project owner explicitly accepted the recommendation on 2026-11-12, including the documented residual evidence limitations. Retain the greybox as the approved interaction/animation candidate, with no further redesign.
 
 The evidence supports the authored kinematic bowl roll, corrected CSV export, contact-geometry tracking, and full-bowl touch target. The owner confirmed that taps in four separated bowl regions all trigger Leo's push. Four complete mouse telemetry runs reached the same final pose. The owner also confirmed that first-time-observer testing was performed.
 
@@ -110,9 +110,10 @@ If these evidence items are unavailable or not material to the next gate, the pr
 - Do not request another 20-run test or another mouse recording.
 - Do not change bowl geometry, Leo's stance, starting pose, authored trajectory, final pose or animation duration.
 - No detailed art or production approval is implied by this assessment.
-- **Gate status at publication: CONDITIONAL PASS recommendation; awaiting explicit project-owner disposition.**
+- **Gate status: CONDITIONAL PASS APPROVED by the project owner on 2026-11-12.**
 
 ## 8. Approver
 
-Project owner disposition: **Pending**  
-Approval date: **Not yet recorded**
+Project owner disposition: **APPROVED — CONDITIONAL PASS**  
+Approval date: **2026-11-12**  
+Approval scope: **The Dog's Bowl greybox gate only.** This approval accepts the documented residual evidence limitations. It does not approve detailed art, production implementation, or release.
