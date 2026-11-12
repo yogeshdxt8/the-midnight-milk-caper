@@ -25,6 +25,7 @@ This register is the index of authoritative project specifications and their app
 | YouTube Playables baseline | `docs/platform/` | Mandatory internal baseline adopted | Reconcile with current official Google requirements before implementation. |
 | Asset and audio registers | `assets/` | Not started | Establish naming, ownership, status and budget metadata. |
 | Quality and release plan | `docs/release/` | Not started | Define device matrix, acceptance gates and release checks. |
+| The Kid's Glass — Chapter 1, Level 2 | `docs/levels/chapter-01/level-02-kids-glass/level-design-v1-0.md` | **Formally approved — level-design stage only (2026-11-12; D-024)**. Originality Review v1.0 passed (17/21; D-020 passed). | Separate explicit owner approval required before greybox development/validation, detailed art or asset production, production implementation, or release. |
 | Dog's Bowl greybox v0.5 | `docs/levels/chapter-01/level-01-dogs-bowl/`; engineering report: `docs/validation/dogs-bowl-greybox-engineering-v3-1.md`; gate assessment: `docs/validation/dogs-bowl-greybox-gate-assessment-v1-0.md` | **Conditional Pass — explicitly approved by project owner (2026-11-12)** | Greybox gate disposition recorded. v3.2.1 full-bowl hit area remains frozen; input-validation workstream closed. The owner accepts the documented residual evidence limitations. This approval is limited to the greybox gate; detailed art, production implementation and release remain unapproved and require separate explicit approvals. |
 
 ## Approval rule
@@ -32,6 +33,8 @@ This register is the index of authoritative project specifications and their app
 A document is not approved merely because it exists, has been generated, or has been committed. The project owner must explicitly approve it, and its status must be updated here.
 
 ## Change history
+
+- 2026-11-12: Project owner explicitly approved The Kid's Glass (Chapter 1, Level 2) at the formal level-design stage. Added level-design specification v1.0 and recorded Decision Log D-024. Originality Review v1.0 scored 17/21 and passed D-020. Greybox, detailed art, production implementation and release remain unapproved and require separate explicit approvals.
 
 - Initial register created during repository initialization.
 - Added Game Design Bible 01 and 02 drafts; both are awaiting project-owner review.
