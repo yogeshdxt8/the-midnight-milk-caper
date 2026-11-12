@@ -6,7 +6,8 @@
 **Approver:** Project owner  
 **Candidate history:** Concept v0.6; Formal Originality Review v1.0  
 **Originality assessment:** Passed; 17/21 provisional desk-review score; D-020 passed  
-**Implementation authority:** Not granted
+**Greybox authority:** Development explicitly authorized under D-025 (2026-11-12); validation pending.
+**Detailed art / production authority:** Not granted
 
 ---
 
@@ -17,12 +18,11 @@ This document records the approved level-design concept and its player-facing in
 The project owner explicitly approved formal level design. This approval is limited to the design specification represented here.
 
 It does **not** approve or authorize:
-- greybox development, implementation or validation;
 - detailed art, modelling, animation or asset production;
 - production gameplay code or integration;
 - release, platform submission or launch.
 
-Those activities require separate gates and explicit approval.
+Greybox development is separately authorized under D-025 and governed by `docs/validation/kids-glass-greybox-plan-v1-0.md`. Detailed art, production implementation and release require separate gates and explicit approval.
 
 ## 2. Level identity
 
@@ -174,10 +174,10 @@ A future greybox review should verify:
 9. Touch and mouse/click inputs behave consistently.
 10. Reset and retry reproduce the same authored sequence.
 
-These are proposed validation criteria for a future gate, not evidence that a greybox exists or has passed.
+These criteria govern the separately authorized greybox work under D-025. They are not evidence that the greybox has passed its validation gate.
 
 ## 12. Approval record
 
 The project owner explicitly approved **The Kid's Glass formal level design** on 2026-11-12.
 
-Approval is limited to this level-design specification. Greybox, detailed art, production implementation and release remain unapproved and require separate explicit decisions.
+Approval is limited to this level-design specification. The project owner separately authorized greybox development on 2026-11-12 (D-025). Greybox validation disposition remains pending. Detailed art, production implementation and release remain unapproved and require separate explicit decisions.
