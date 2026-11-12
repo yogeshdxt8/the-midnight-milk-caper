@@ -1,7 +1,7 @@
 # Game Design Bible 01 — Product Vision
 
 **Project:** The Midnight Milk Caper  
-**Document status:** Proposed — Gemini independent review completed; revisions incorporated; awaiting project-owner approval  
+**Document status:** Approved — project-owner approval recorded  
 **Version:** 0.9  
 **Authority:** Game Design Bible; subordinate to current official platform requirements
 
@@ -260,6 +260,7 @@ The document remains subject to explicit project-owner approval.
 - Launch scope: Approved planning approach — 50 levels across five chapters as the intended journey; validate a representative vertical slice before committing launch count; adjust scope based on quality, variety and production feasibility.
 - Independent review: Gemini — Approve with Revisions; recommendations assessed and accepted, qualified or deferred as recorded in Section 18.
 - Product-vision decisions: All seven decision areas have approved directions.
-- Formal document approval: Pending project-owner approval.
-- Date approved: Pending.
-- Changes required: Project-owner review of version 0.9.
+- Formal document approval: Approved by the project owner.
+- Date approved: 2026-11-12.
+- Approved version: 0.9.
+- Changes required: None for this approval; subsequent changes require normal document versioning and review.
