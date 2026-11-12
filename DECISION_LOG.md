@@ -17,6 +17,7 @@ This log records durable project decisions. New decisions are appended; supersed
 | D-011 | Visual direction uses a polished dimensional cartoon style with a magical midnight atmosphere. | Approved direction | Specific screen layouts and production assets require separate approval. |
 | D-012 | The intended audience is a broad casual audience aged 13+, not a product designed exclusively for young children. | Approved | Family-friendly, general-audience creative direction; 13+ is positioning, not a formal platform/content rating. |
 | D-013 | Milk is Leo's signature motivation and the emotional thread connecting the game, but not every level must involve obtaining milk. | Approved | Levels may have other objectives while retaining Leo's character and the broader emotional thread. |
+| D-014 | Initial level-duration target is approximately 1–3 minutes based on complexity: simple ~1 minute, standard ~2 minutes, involved ~3 minutes. | Approved | These are targets, not forced timers; validate and adjust with playtesting. |
 
 ## Decision record template
 
