@@ -35,6 +35,8 @@ This log records durable project decisions. New decisions are appended; supersed
 
 | D-026 | Approve Responsive Rescue and Fair Intervention as the next Level 2 design direction for The Kid's Glass. | Approved (2026-11-12) | Owner explicitly approved the design direction after review of the v0.7.2 input-gating problem. Leo acknowledges early taps immediately without rescuing; actual rescue becomes actionable before the near-edge moment; an accepted tap immediately starts Leo's reach; the near-edge hesitation remains an additional fair opportunity; existing failure/fall/shatter remains. Leo stays the sole interactive target. No countdown, extra button, second objective or new mechanic. This approves the design direction/specification only, not implementation, a new greybox version, detailed art/assets, production integration or release. Specification: `docs/levels/chapter-01/level-02-kids-glass/responsive-rescue-design-v1-0.md`. |
 
+| D-027 | Authorize implementation of The Kid's Glass greybox v0.7.3 under Responsive Rescue and Fair Intervention v1.0. | Approved (2026-11-12) | Owner explicitly accepted the recommendation to implement the approved interaction direction. Scope is limited to a low-fidelity greybox prototype and its validation: early-tap acknowledgement without queuing, rescue activation after visible slide travel and before the near-edge hesitation, immediate reach on accepted tap, Leo-only target, preserved near-edge hesitation, and existing fall/shatter. This does not authorize detailed art/assets, production implementation/integration, monetization, persistence or release. Greybox gate remains open pending Android/device evidence and explicit owner disposition. |
+
 ## Decision record template
 
 For future entries, include:
