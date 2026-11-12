@@ -2,7 +2,7 @@
 
 **Project:** The Midnight Milk Caper  
 **Document status:** Research draft — expanded competitor evidence and originality framework; not approved  
-**Version:** 0.4  
+**Version:** 0.5  
 **Research note:** This is a design-risk assessment, not legal advice or a clearance opinion. Competitor descriptions are based on linked store/publisher sources and secondary gameplay references where identified. Broad product descriptions do not prove every mechanic; direct playthrough review remains necessary. The scan is not exhaustive.
 
 ## 1. Purpose
@@ -515,3 +515,93 @@ Do not compare level numbers across versions unless the build and sequence are c
 - Date approved: Pending
 - Version reviewed: 0.3
 - Changes required: Complete version-identified direct gameplay annotation for early, middle and later levels; revise the proposed Leo taxonomy based on that evidence; only then audit the candidate level catalogue.
+
+
+## 25. Browser-build interaction audit — Famobi-hosted Thief Puzzle
+
+### 25.1 Build and source identity
+
+A browser version is documented at [thiefpuzzle.com](https://thiefpuzzle.com/), whose page footer credits Famobi for the free browser game. This is a browser build, not proof of parity with TapNation's current native mobile app. Treat observations below as specific to the described browser implementation unless confirmed in the mobile build.
+
+The page provides a four-step description and illustrative images:
+- Level 1 tutorial illustration: a straight downward reach from the thief to a briefcase.
+- Library illustration: a curved arm routed around a no-phone sign and potted plant toward a phone, with a guard nearby.
+- Route illustration: a blue planned path curves around the library props and down to the target.
+- Completion illustration: replay, level-select and next-level controls.
+
+Source: [Famobi-hosted browser game and how-to-play page](https://thiefpuzzle.com/), especially its How to Play and Features sections.
+
+### 25.2 What the page directly establishes
+
+The page explicitly documents:
+- A static scene presented before player input.
+- A target item and thief's hand as the starting/ending anchors.
+- Click/tap-and-drag to stretch and steer a continuous arm.
+- Curving around obstacles and threading through gaps.
+- Timing movement around moving hazards.
+- Touching a person triggers an alarm; touching a saw or TNT ends the attempt.
+- The page characterizes most scenes as having one safe route.
+- Reaching the target completes the level.
+- Mouse and touch are the supported input families for this browser version.
+
+This confirms the central interaction grammar at the browser-page level. It does not independently establish the native app's precise physics, all failure rules, all level variations or later-level sequence.
+
+### 25.3 Scene and challenge variation demonstrated by page examples
+
+| Example scene | Scene composition | Route challenge | What varies | What remains the same |
+|---|---|---|---|---|
+| Tutorial briefcase | Thief above target on a simple open field | Straight reach | Distance and simple target placement | Extend arm to target |
+| Library phone | Guard, sign, potted plant, shelves and phone | Curved route around multiple scene elements | Obstacle arrangement, setting and target | Trace one continuous safe arm route |
+| Moving hazard scenes | Static layout plus timed moving obstacle (described by page) | Choose a route and/or wait for a timing window | Hazard phase and timing | Same reach-and-avoid objective |
+
+The page's copy also gives a park-bench purse and a tourist suitcase near a landmark as example heist scenes. These support scene/objective variation but do not prove new interaction mechanics.
+
+### 25.4 Refined interaction grammar
+
+The interaction can be modelled as:
+
+**Scene scan → route hypothesis → continuous arm extension/steering → hazard avoidance → target contact → success or failure feedback → retry/advance.**
+
+Its challenge dimensions are:
+1. **Topology:** which gaps, walls, edges and props the arm must pass.
+2. **Path geometry:** the curvature and placement of the whole arm, not only the hand endpoint.
+3. **Hazard state:** where people and hazards are located.
+4. **Timing:** whether a moving hazard is in a safe phase during the route.
+5. **Target access:** whether the hand can reach the target without the arm crossing a hazard.
+
+These dimensions can be recombined into many scenes. They are variations inside one dominant grammar, not evidence of five separate core mechanics.
+
+### 25.5 Implications for our originality rule
+
+The browser page strengthens an important distinction:
+
+- **Good lesson to learn:** clear scene scan, visible goal, legible obstacles, one-finger/mouse gesture, cause-and-effect feedback and quick level framing.
+- **Do not reproduce:** the rubber-arm traversal, one-safe-route heist proposition, loot target as universal goal, guard/alarm plus trap routing as the repeated problem.
+- **Not enough to differentiate:** swapping the thief for Leo, replacing loot with milk, or changing a library into a kitchen while retaining the same route-to-target structure.
+
+For Leo, route planning may appear as a small supporting decision in a level, but it should not become the universal interaction grammar. Leo's body must remain the agent, and different levels should ask different questions.
+
+## 26. Revised confidence register
+
+| Finding | Confidence | Basis |
+|---|---|---|
+| Core browser interaction is continuous arm stretch/steer by drag | High for the Famobi-hosted browser page | Explicit page instructions and illustrations |
+| Core objective is reach a target item in a heist scene | High for the browser page | Explicit page description |
+| Static obstacles and moving hazards both affect route planning | High for the browser page | Explicit instructions |
+| People, saws and TNT are named failure hazards | High for the browser page | Explicit instructions |
+| Most browser scenes are designed around one safe route | High as a statement made by the page; not independently measured | Page wording |
+| Native TapNation app has identical controls/physics/level sequence | Unverified | Browser/native parity not established |
+| Later native levels add particular named hazards in a fixed order | Unverified | Secondary guides vary and version identity is unclear |
+| Level numbers 1–5 correspond across app and browser builds | Unverified | No build/version mapping |
+
+### Next step after this browser audit
+
+The remaining evidence gap is not another broad web summary. It is a controlled hands-on sample of the actual mobile build the project wants to use as its reference. Record the app version/build and capture early, middle and later levels. If the user supplies screenshots or screen recordings, annotate those exact samples. Do not silently merge observations from unrelated browser clones or similarly named games.
+
+## 27. Approval record
+
+- Research owner review: In progress
+- Product owner approval: Pending
+- Date approved: Pending
+- Version reviewed: 0.5
+- Changes required: Complete version-identified hands-on sampling of the current TapNation mobile app (or explicitly choose a specific Famobi browser build as the sole reference); then refine Leo's mechanic taxonomy before any candidate-level audit.
