@@ -1,8 +1,8 @@
 # Game Design Bible 01 — Product Vision
 
 **Project:** The Midnight Milk Caper  
-**Document status:** Proposed — audience, milk-motivation, level-duration, difficulty-progression and failure-model directions approved; remaining product decisions pending  
-**Version:** 0.6  
+**Document status:** Proposed — audience, milk-motivation, level-duration, difficulty-progression, failure-model and progression directions approved; one product decision remains pending  
+**Version:** 0.7  
 **Authority:** Game Design Bible; subordinate to current official platform requirements
 
 ## 1. Product statement
@@ -174,7 +174,18 @@ The following are product hypotheses, not measured results:
 
 These hypotheses require usability testing, level playtests, performance testing and platform validation.
 
-## 15. Explicit non-goals
+## 15. Progression and replayability
+
+**Approved progression direction:**
+- Completing a level unlocks the subsequent level.
+- Completing a chapter unlocks the next chapter.
+- There is no mandatory currency economy: no coins, gems, energy or artificial resource loops.
+- Players can replay completed levels.
+- Achievements or cosmetic rewards may be considered later, but only if they demonstrably improve the experience; they are not required for the core progression loop.
+
+The detailed unlock rules, save-state behaviour and any optional reward design remain to be specified and validated. Optional rewards must not introduce a disguised grind or undermine the no-mandatory-currency decision.
+
+## 16. Explicit non-goals
 
 Unless separately approved, the product is not intended to become:
 - A broad open-world sandbox on the scale of a premium adventure game.
@@ -207,18 +218,18 @@ Checkpoints are a level-design tool, not a mandatory feature in every level. The
 
 This is a progression framework, not a promise that every level in a numerical band has identical difficulty. Individual levels must still be playtested for clarity, fairness and pacing. Precision timing should not become the dominant measure of skill; it may appear when appropriate to a level's central idea.
 
-## 17. Open decisions for approval
+## 18. Open decisions for approval
 
-1. **Progression:** Should chapter/level completion be the primary progression system, with no currency economy unless a concrete design need is established?
-2. **Scope:** Is 50 levels a fixed launch target or a planning target that can be adjusted after vertical-slice validation?
+1. **Scope:** Is 50 levels a fixed launch target or a planning target that can be adjusted after vertical-slice validation?
 
-## 18. Approval record
+## 19. Approval record
 
 - Audience positioning: Approved — broad casual audience, 13+.
 - Milk motivation: Approved — signature motivation and emotional thread; not every level requires obtaining milk.
 - Level duration: Approved initial target — 1–3 minutes by complexity; no forced timer; validate through playtesting.
 - Difficulty progression: Approved — accessible early levels, mechanic combinations and observation in the middle, more challenging multi-step adventures later.
 - Failure model: Approved direction — unlimited retries, no lives/energy/waiting, quick restarts and contextual checkpoints where useful.
+- Progression: Approved — sequential level unlocks, chapter unlocks, replayable completed levels and no mandatory currency economy; optional achievements/cosmetics only if they add value.
 - Remaining product vision approval: Pending.
 - Date approved: Pending.
 - Changes required: Remaining open decisions above.
