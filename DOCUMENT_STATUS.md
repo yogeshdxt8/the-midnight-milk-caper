@@ -14,7 +14,7 @@ This register is the index of authoritative project specifications and their app
 
 | Document / workstream | Location | Current status | Next action |
 |---|---|---|---|
-| Product Vision — Game Design Bible 01 | `docs/vision/game-identity.md` | Proposed v0.9; Gemini review completed and revisions incorporated; project-owner approval pending | Project owner to review v0.9 and explicitly approve or request further revisions. |
+| Product Vision — Game Design Bible 01 | `docs/vision/game-identity.md` | **Approved v0.9** | Proceed to Game Design Bible 02 — Originality Research; retain normal change control for future revisions. |
 | Originality Research — Game Design Bible 02 | `docs/research/originality-and-competitor-review.md` | Research draft v0.1; initial scan, not approved | Deepen Thief Puzzle and casual-game evidence; compare all candidate levels. |
 | Character Bible — Leo | `docs/characters/leo-character-bible.md` | Approved direction; detailed spec in progress | Finalize identity and technical character specifications. |
 | World and location Bible | `docs/characters/` and `docs/levels/` | Not started | Define recurring locations and continuity rules. |
@@ -42,3 +42,4 @@ A document is not approved merely because it exists, has been generated, or has 
 - Recorded approved level/chapter progression and replayability direction in Game Design Bible 01 and Decision Log D-017.
 - Recorded flexible 50-level planning scope and vertical-slice gate in Game Design Bible 01 and Decision Log D-018.
 - Incorporated Gemini's independent Product Vision review into v0.9; platform bundle constraints verified against current Google Playables documentation; optional replay incentives and detailed frame-rate thresholds deferred to later specifications.
+- 2026-11-12: Project owner explicitly approved Game Design Bible 01 — Product Vision v0.9.
