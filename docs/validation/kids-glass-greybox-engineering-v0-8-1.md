@@ -1,7 +1,7 @@
 # The Kid's Glass — Greybox v0.8.1 Engineering Note
 
 Date: 2026-11-12  
-Status: Implemented; awaiting owner Android validation  
+Status: Implemented; partial owner Android validation confirmed  
 Scope: Focused low-fidelity greybox refinement only
 
 ## Owner authorization
@@ -30,8 +30,13 @@ The owner approved a focused v0.8.1 refinement after reporting that v0.8.0's ran
 
 - JavaScript syntax check passed with Node.js.
 - The v0.8.1 HTML and ZIP package were generated.
-- This is not Android validation. Device behaviour, perceptible speed contrast, shudder readability and early/middle/late intervention fairness remain for owner testing.
+
+## Owner Android feedback
+
+The owner confirmed that the v0.8.1 attempts now feel noticeably different in speed and that the edge shudder and Leo's anticipation are noticeable.
+
+This confirms the targeted perceptibility refinement. It does not yet establish the complete greybox gate: early/middle/late intervention fairness, immediate response on valid taps, pre-slide tap behaviour, no-input fall/shatter, and repeatability still require explicit evidence/review.
 
 ## Gate status
 
-The Level 2 greybox gate remains OPEN. v0.8.1 implementation does not constitute a gate pass or production authorization.
+The Level 2 greybox gate remains OPEN. v0.8.1 implementation and the partial owner confirmation do not constitute a gate pass or production authorization.
