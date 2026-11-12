@@ -1,8 +1,8 @@
 # Game Design Bible 01 — Product Vision
 
 **Project:** The Midnight Milk Caper  
-**Document status:** Proposed — audience, milk-motivation, level-duration and difficulty-progression directions approved; remaining product decisions pending  
-**Version:** 0.5  
+**Document status:** Proposed — audience, milk-motivation, level-duration, difficulty-progression and failure-model directions approved; remaining product decisions pending  
+**Version:** 0.6  
 **Authority:** Game Design Bible; subordinate to current official platform requirements
 
 ## 1. Product statement
@@ -107,7 +107,7 @@ Prefer funny consequences that result from the player's action and the character
 
 Failure should be understandable, recoverable and proportionate. Avoid punitive waits, confusing resets and situations where the player cannot tell why an attempt failed.
 
-## 8. Content scope
+## 10. Content scope
 
 The current planning target is 50 levels arranged as five chapters of ten levels each. This is a proposed production scope, not a promise that all 50 concepts are already designed or validated.
 
@@ -120,7 +120,7 @@ The candidate chapter themes are:
 
 These names and the current candidate level list remain provisional. Each level must pass originality, variety, clarity, feasibility and Playables suitability review before entering the approved catalogue.
 
-## 9. Visual and audio direction
+## 11. Visual and audio direction
 
 Approved visual direction:
 - Polished, dimensional cartoon presentation.
@@ -136,7 +136,7 @@ Approved audio direction:
 
 Specific art style, production pipeline, animation budgets, sound library, screen layouts and asset specifications require separate approval.
 
-## 10. Product principles
+## 12. Product principles
 
 1. Character before gimmick.
 2. Player agency before passive spectacle.
@@ -147,7 +147,7 @@ Specific art style, production pipeline, animation budgets, sound library, scree
 7. One shared game core with platform adapters.
 8. Design and validation before implementation.
 
-## 11. Platform and production constraints
+## 13. Platform and production constraints
 
 YouTube Playables is the primary design and technical target. Design must account for:
 - Responsive portrait and landscape layouts and changing viewport sizes.
@@ -160,7 +160,7 @@ YouTube Playables is the primary design and technical target. Design must accoun
 
 The current official Google Playables documentation is authoritative and must be rechecked before implementation and release. See the platform research register and the official sources linked below.
 
-## 12. Success criteria to validate
+## 14. Success criteria to validate
 
 The following are product hypotheses, not measured results:
 - A new player can identify the immediate goal quickly.
@@ -174,7 +174,7 @@ The following are product hypotheses, not measured results:
 
 These hypotheses require usability testing, level playtests, performance testing and platform validation.
 
-## 13. Explicit non-goals
+## 15. Explicit non-goals
 
 Unless separately approved, the product is not intended to become:
 - A broad open-world sandbox on the scale of a premium adventure game.
@@ -186,7 +186,19 @@ Unless separately approved, the product is not intended to become:
 - A collection of reskinned levels with identical solutions.
 - A timed speed-run experience in which all levels force players to finish within the duration targets.
 
-## 14. Difficulty progression
+## 8. Failure and retry philosophy
+
+**Approved failure-model direction:**
+- Unlimited retries; no limited-lives system.
+- No energy system or waiting period between attempts.
+- Failed attempts must have understandable consequences and feedback.
+- Restarting a puzzle should be quick and straightforward.
+- For multi-stage levels, consider checkpoints when restarting from the beginning would create unnecessary frustration.
+- Where appropriate, failure itself can create a funny or interesting moment; it should not punish experimentation.
+
+Checkpoints are a level-design tool, not a mandatory feature in every level. Their placement and reset behaviour must be specified per level and validated in playtests.
+
+## 9. Difficulty progression
 
 **Approved progression direction:**
 - **Early levels (1–10):** Very accessible. Teach movement and basic interactions naturally.
@@ -195,18 +207,18 @@ Unless separately approved, the product is not intended to become:
 
 This is a progression framework, not a promise that every level in a numerical band has identical difficulty. Individual levels must still be playtested for clarity, fairness and pacing. Precision timing should not become the dominant measure of skill; it may appear when appropriate to a level's central idea.
 
-## 15. Open decisions for approval
+## 17. Open decisions for approval
 
-1. **Failure model:** Should most levels allow immediate retries/checkpoints rather than limited lives?
-2. **Progression:** Should chapter/level completion be the primary progression system, with no currency economy unless a concrete design need is established?
-3. **Scope:** Is 50 levels a fixed launch target or a planning target that can be adjusted after vertical-slice validation?
+1. **Progression:** Should chapter/level completion be the primary progression system, with no currency economy unless a concrete design need is established?
+2. **Scope:** Is 50 levels a fixed launch target or a planning target that can be adjusted after vertical-slice validation?
 
-## 15. Approval record
+## 18. Approval record
 
 - Audience positioning: Approved — broad casual audience, 13+.
 - Milk motivation: Approved — signature motivation and emotional thread; not every level requires obtaining milk.
 - Level duration: Approved initial target — 1–3 minutes by complexity; no forced timer; validate through playtesting.
 - Difficulty progression: Approved — accessible early levels, mechanic combinations and observation in the middle, more challenging multi-step adventures later.
+- Failure model: Approved direction — unlimited retries, no lives/energy/waiting, quick restarts and contextual checkpoints where useful.
 - Remaining product vision approval: Pending.
 - Date approved: Pending.
 - Changes required: Remaining open decisions above.
