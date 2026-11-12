@@ -19,6 +19,7 @@ This log records durable project decisions. New decisions are appended; supersed
 | D-013 | Milk is Leo's signature motivation and the emotional thread connecting the game, but not every level must involve obtaining milk. | Approved | Levels may have other objectives while retaining Leo's character and the broader emotional thread. |
 | D-014 | Initial level-duration target is approximately 1–3 minutes based on complexity: simple ~1 minute, standard ~2 minutes, involved ~3 minutes. | Approved | These are targets, not forced timers; validate and adjust with playtesting. |
 | D-015 | Difficulty progresses from accessible fundamentals (levels 1–10), to combinations of mechanics and observation (11–30), to challenging multi-step puzzles and creative situations (31–50). | Approved direction | Progression bands are a framework; validate individual levels for clarity, fairness and pacing. Precision timing is not the dominant skill. |
+| D-016 | The game uses unlimited retries, no limited lives, no energy system or waiting periods, quick puzzle restarts and contextual checkpoints where useful. | Approved direction | Failure consequences must be understandable; failure may be funny, but must not punish experimentation. Checkpoints are considered per level, not mandated everywhere. |
 
 ## Decision record template
 
