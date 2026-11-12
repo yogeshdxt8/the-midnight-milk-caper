@@ -39,3 +39,5 @@ For future entries, include:
 - **Approver**
 
 Do not infer approval from silence or from a generated concept image.
+
+| D-020 | Any candidate level scoring 0 or 1 in either Player role or Core interaction on the Originality Review Rubric is an automatic NO-GO and must be rejected or redesigned before entering the production backlog; Chapter 1, Level 1 — “The Dog's Bowl” is the first concrete stress-test case for Leo's embodied interaction grammar. | Approved direction (2026-11-12) | A high aggregate score cannot override the gate. The designated level is a concept test case only; mechanics, layout and production approval remain separate gates. |
