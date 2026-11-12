@@ -2,7 +2,7 @@
 
 **Project:** The Midnight Milk Caper  
 **Document status:** Research draft — expanded competitor evidence and originality framework; not approved  
-**Version:** 0.2  
+**Version:** 0.3  
 **Research note:** This is a design-risk assessment, not legal advice or a clearance opinion. Competitor descriptions are based on linked store/publisher sources and secondary gameplay references where identified. Broad product descriptions do not prove every mechanic; direct playthrough review remains necessary. The scan is not exhaustive.
 
 ## 1. Purpose
@@ -295,3 +295,206 @@ The next design work must prove these claims through a mechanic taxonomy and a c
 - Date approved: Pending
 - Version reviewed: 0.2
 - Changes required: Complete direct gameplay sampling and mechanic taxonomy; then audit candidate level concepts before requesting approval.
+
+
+## 19. Thief Puzzle gameplay sampling — documented sample
+
+### 19.1 Evidence boundary
+
+This pass uses the publisher's store descriptions, browser-play instructions, level-by-level walkthrough descriptions and publicly indexed gameplay walkthroughs. It is a **documentary gameplay sample**, not a claim that the current native app was installed and every sampled level was personally played frame by frame. The browser guide is not the publisher; walkthrough pages and videos are third-party material. Mobile and browser versions may differ in level order, mechanics and content.
+
+Primary and supporting references:
+- TapNation, [Google Play listing](https://play.google.com/store/apps/details?id=com.weegoon.thiefpuzzle): current publisher description and product positioning.
+- TapNation, [Apple App Store listing](https://apps.apple.com/in/app/thief-puzzle-to-pass-a-level/id1549814091): swipe controls, humorous puzzle positioning, theft objective and increasing challenge.
+- [Thief Puzzle browser instructions](https://thiefpuzzle.com/): step-by-step explanation of study scene → stretch/guide arm → avoid hazards → grab loot. This is a third-party browser-game guide, not a publisher source.
+- [Walkthrough levels 1–5](https://walkthroughs.net/thief-puzzle-walkthrough/): level-specific descriptions for early stages.
+- [YouTube levels 1–10 walkthrough](https://www.youtube.com/watch?v=_7cKyyS6WQA): publicly indexed gameplay walkthrough by ZCN Games, published January 27, 2021.
+- [YouTube levels 1–10 walkthrough](https://www.youtube.com/watch?v=n8dGzcQuHSE): second publicly indexed walkthrough, published May 20, 2021.
+- [Thief Puzzle browser gameplay guide](https://yayoye.com/game/thief-puzzle-1): secondary description of drag/hold input and later obstacle patterns.
+
+### 19.2 Core interaction loop
+
+The sources consistently describe this loop:
+
+1. **Read the tableau:** identify the thief's starting position, target item, walls/gaps, people/animals and hazards.
+2. **Plan a route:** mentally trace a continuous path from the thief's hand to the target.
+3. **Commit to a continuous gesture:** press/hold and drag to extend and steer the arm; mouse and touch are supported in the described browser version.
+4. **Manage path geometry:** the entire arm path matters, not only the endpoint. Curves and narrow passages must avoid contact with obstacles.
+5. **Manage hazard timing:** when hazards or guards move, observe their pattern and choose a safe timing window.
+6. **Reach the target:** the target is the completion condition; a failed contact or detection resets/fails the attempt according to the version and hazard.
+7. **Retry or advance:** short discrete levels encourage another attempt and then move to a new scene.
+
+The central verb is not simply “steal.” At the input level it is **draw/steer a continuous reach path**. At the decision level it is **route a vulnerable path through a constrained scene**. At the fantasy level it is **steal a target without detection**. These layers must be kept separate when comparing originality.
+
+### 19.3 Sampled early-level progression
+
+The following is a conservative sample of level descriptions from the linked walkthrough. It records only what the source explicitly describes; it does not infer hidden mechanics.
+
+| Sample | Documented scene/objective | Interaction or puzzle demand | Design observation |
+|---|---|---|---|
+| Level 1 | Reach a briefcase placed below the thief | Direct drag of the hand to the target | A near-straight introductory route teaches the primary gesture and goal |
+| Level 2 | Steal an old lady's bag | Route the hand using a hanging hook as part of the route/scene | Adds a person whose presence changes the route and a scene-specific environmental affordance |
+| Level 3 | Obtain a bag of vegetables near a hydrant | Route the hand around the hydrant | Introduces obstacle-aware path geometry in a different setting |
+| Level 4 | Steal a bag from a person taking a selfie in a Paris/Eiffel Tower scene | Route around/using the balloon and Eiffel Tower elements | Uses recognizable landmark props as spatial route elements and a comic theft setup |
+| Level 5 | Museum scene with gold coins and a thief already robbing them | Walkthrough description identifies a museum/coin setup; exact input challenge not sufficiently described in the accessible text | Do not infer a new mechanic from the scene description alone |
+
+The level 1–10 walkthroughs establish that a continuous early-level sample is available for further inspection, but their indexed descriptions do not provide a reliable mechanic annotation for every level. Do not fabricate levels 6–10 mechanics from the video title.
+
+### 19.4 Interaction and variation taxonomy observed in Thief Puzzle
+
+| Pattern | What changes | What remains invariant | Confidence |
+|---|---|---|---|
+| Direct reach | Target position and distance | Same continuous arm-drag action | High |
+| Static obstacle routing | Walls, furniture, poles, hydrants, landmark props and gaps | Trace one safe continuous route | High |
+| Human proximity / detection | Person location, posture or awareness | Reach target without being caught | High |
+| Environmental affordance routing | Hooks, balloons or scene objects can shape/enable the route | Arm remains the route-following tool | Medium; based on early walkthrough descriptions |
+| Moving hazard timing | Patrols, swinging/rotating hazards or timed beams | Wait, then execute the same reach gesture | Medium; described by secondary browser guides, not independently verified for every app build |
+| Hazard avoidance | Guards, dogs, fans, lasers, cameras, saws and explosive hazards are described across browser guides | Avoid contact/detection while tracing the arm | Medium; hazard list varies by source/version |
+| Scene reskin / contextual gag | Location, target and comic context | Same theft-and-reach puzzle grammar | High |
+
+**Key finding:** The game can vary scene art, target, route geometry and hazard arrangement extensively while retaining one dominant interaction grammar. This is efficient and readable, but it is precisely the kind of structural repetition The Midnight Milk Caper should not reproduce as its whole product.
+
+### 19.5 What the sample teaches us
+
+- A single unusual input mechanic can be immediately understandable and support many levels.
+- A target, a route and a failure hazard create a very compact puzzle proposition.
+- The entire gesture path can be the challenge, not merely the destination.
+- Environmental objects can act as route constraints or route affordances.
+- Moving hazards add timing decisions without changing the primary input.
+- Scene-specific humour and recognizable props can make a repeated mechanic feel fresh for a while.
+- The same efficiency creates a repetition risk: if most levels still ask the player to route one elastic limb to steal one object, changing the target and scenery does not create a new gameplay identity.
+
+We should learn from its clarity, short setup, visible cause-and-effect and fast retry loop. We should not copy its central gesture, target/loot structure, theft fantasy, hazard-route composition or recognizable scenes.
+
+## 20. Proposed Leo mechanic taxonomy — original design candidates
+
+This is a **proposal for our own design vocabulary**, not a list of already approved or implemented mechanics. Each mechanic must earn its place through a level concept and playtest. Avoid making a universal mechanic catalogue so large that every level becomes an unfocused feature demonstration.
+
+### 20.1 Locomotion and body control
+
+| Candidate mechanic | Player decision | Leo-specific expression | Originality guardrail |
+|---|---|---|---|
+| Walk / run / stop | Choose approach, pace and stopping point | Four-legged movement, quick kitten acceleration and readable braking | Do not make movement itself a generic platformer unless a level needs it |
+| Jump / land | Judge distance, height and landing space | Compact kitten jump, paw-first landing and balance recovery | Avoid copying familiar platformer obstacle courses as the default level structure |
+| Climb / descend | Choose a climbable surface and route | Claws, paws and kitten scale make routes available | The puzzle should concern a situation, not simply climbing a ladder-shaped route |
+| Balance / edge movement | Control speed and position on narrow or unstable surfaces | Tail and body posture communicate balance | Keep precision forgiving; do not turn every level into an unforgiving balance test |
+| Crouch / squeeze / hide | Choose whether and when to fit through a small space | Small body and curious posture | Do not use stealth/guard evasion as the repeated identity |
+| Pounce / short burst | Time a short committed movement | Kitten hunting/play behaviour | Use sparingly; avoid turning every challenge into reaction timing |
+
+### 20.2 Sensory observation and attention
+
+| Candidate mechanic | Player decision | Leo-specific expression | Originality guardrail |
+|---|---|---|---|
+| Look / inspect | Choose what to examine before acting | Head tilt, eye tracking, ear orientation | Observation must reveal actionable information, not become hidden-object pixel hunting |
+| Listen / locate | Identify a sound source or rhythm | Ears turn; Leo reacts to faint sounds | Audio must have a clear visual/accessibility equivalent |
+| Follow a moving cue | Decide when and where to move based on a visible pattern | Focused kitten attention | Do not reproduce Thief Puzzle's “wait for guard, trace arm” loop |
+| Notice scent / trail | Follow or compare environmental clues | Sniffing and nose-led curiosity | Treat scent as a clue language, not an arbitrary invisible trail |
+
+### 20.3 Physical interaction
+
+| Candidate mechanic | Player decision | Leo-specific expression | Originality guardrail |
+|---|---|---|---|
+| Paw tap / nudge | Choose object and force/direction | Small paw contact with weighty reaction | Avoid replacing the Thief Puzzle arm with a universal long-range paw |
+| Push / pull | Position body and apply force | Shoulder/paw/body leverage | Object physics must be legible and not become a generic contraption builder |
+| Carry / drag | Decide what Leo can move and where | Mouth/paws and small-body limitations | Avoid making every objective “carry item to target” |
+| Scratch / claw | Choose a surface or mechanism to affect | Claw-specific contact and scratching feedback | Do not use as a generic key that opens every barrier |
+| Bat / swat | Use a quick paw strike to change an object's state | Playful kitten behaviour | Distinguish from long-range path drawing; contact must be local and physical |
+| Press / hold | Maintain contact for a period or until a response | Paw/weight/body posture | Timing should serve a situation, not become a universal hold-button puzzle |
+
+### 20.4 Spatial and environmental problem solving
+
+| Candidate mechanic | Player decision | Leo-specific expression | Originality guardrail |
+|---|---|---|---|
+| Use cover / concealment | Choose a position relative to sightlines | Small body fits behind ordinary objects | Not a repeated guard-stealth loop |
+| Change a route | Move an environmental object or open a passage | Leo's size and paws affect what can be moved | Avoid one fixed “move object to clear path” puzzle repeated |
+| Create a foothold | Reposition or use an object to reach a place | Kitten climbing and jumping | Avoid chain-reaction machine construction as the central game |
+| Exploit a physical property | Use weight, spring, friction, tilt or swing | Leo's body is part of the physical system | Each property must support a distinct player decision |
+| Navigate a social space | Read another character's behaviour and choose an approach | Cat body language and curiosity | Do not turn people into guards in every level |
+
+### 20.5 Character and social interaction
+
+| Candidate mechanic | Player decision | Leo-specific expression | Originality guardrail |
+|---|---|---|---|
+| Approach / retreat | Choose distance and timing | Friendly, curious or cautious body language | No generic stealth meter by default |
+| Befriend / assist | Decide how to help another character | Gentle kitten behaviour and expressive reactions | Not every non-milk objective should be a fetch quest |
+| Play / distract | Choose an appropriate playful interaction | Kitten playfulness | Do not recreate Goose-style prank-task loops |
+| React / settle | Choose whether to persist, pause or retreat after a surprise | Startle, curiosity, purr, hesitation | Avoid long forced reaction animations |
+
+### 20.6 Situational timing
+
+| Candidate mechanic | Player decision | Leo-specific expression | Originality guardrail |
+|---|---|---|---|
+| Wait for a safe moment | Choose a timing window | Alert ears and posture | Must not be “wait for patrol, then route stretchy limb” |
+| Follow a rhythm | Act in relation to repeating environmental beats | Paw taps and attentive movement | Rhythm is an occasional level grammar, not a new global genre |
+| Commit / abort | Decide whether to continue or retreat from a risky action | Body tension and readable anticipation | Give clear feedback; avoid opaque reaction-time traps |
+
+### 20.7 Candidate mechanic families
+
+For planning, the taxonomy can be grouped into six families:
+1. **Move:** locomotion and body control.
+2. **Notice:** sensory observation and attention.
+3. **Touch:** local physical interaction.
+4. **Manipulate:** push, pull, carry and alter objects.
+5. **Relate:** interact with characters and social situations.
+6. **Time:** act around rhythms, movement and temporary states.
+
+A level should normally have one dominant family and, where justified, one supporting family. This is a design heuristic, not a strict formula. A mechanic should not be added to the game merely because it appears in this taxonomy.
+
+## 21. Distinction test: Thief Puzzle versus Leo
+
+| Dimension | Thief Puzzle | Proposed Midnight Milk Caper direction |
+|---|---|---|
+| Player avatar | Thief represented by an arm/hand reaching into a scene | Fully embodied kitten whose whole body moves and acts |
+| Dominant input | Continuous press/hold-and-drag gesture tracing a path | Context-sensitive movement and local interactions; simple touch controls |
+| Core problem | Find a safe route for the extended arm to the loot | Understand and solve a situation through Leo's body, observation and choices |
+| Goal | Steal the target object | Varies by authored episode; may involve exploration, helping, comfort, investigation or escape as well as milk-related goals |
+| Main constraints | Geometry, barriers, guards and hazards along the arm path | Physical space, object affordances, character behaviour, timing and situational rules |
+| Failure | Contact/detection commonly fails the attempt | Friendly, understandable and quickly recoverable consequences; no punishment loop |
+| Variety strategy | Different targets, scenes, route layouts and obstacle combinations | Different player decisions, verbs, objectives, character dynamics and payoffs |
+| Comedy source | Comic theft situations and reactions | Leo's intentions, physicality, personality and player-caused outcomes |
+
+The difference must be experienced in a playable level, not merely described in a document.
+
+## 22. Mechanic governance and validation rules
+
+Before a candidate mechanic enters the approved core:
+- State the player-facing verb in one sentence.
+- Identify the player decision, not just the animation.
+- Specify input, feedback, failure and recovery.
+- Explain why the mechanic benefits from Leo being a kitten.
+- Identify the closest competitor pattern and explain the meaningful distinction.
+- Demonstrate at least two distinct level uses without turning them into reskins.
+- Confirm touch/mouse readability and accessibility alternatives.
+- Prototype only after the relevant design gate permits implementation.
+
+Before a level uses a mechanic:
+- Identify its dominant and supporting mechanic families.
+- Explain the setup, objective, challenge and payoff.
+- Confirm that the solution is not just a reskinned route-to-target problem.
+- Compare it with previous levels and the competitor matrix.
+- Test whether a player can understand the situation and infer a meaningful action.
+
+## 23. Research status and remaining evidence gaps
+
+- Publisher descriptions and store listings: reviewed.
+- Browser control description: reviewed as third-party reference.
+- Early-level walkthrough descriptions: sampled for levels 1–5.
+- Publicly indexed levels 1–10 videos: located; detailed frame-by-frame annotation remains outstanding.
+- Later-level variation: secondary descriptions identify moving hazards, tighter passages, cameras and lasers; direct sample across later levels remains outstanding.
+- Version parity: unresolved; app, browser and historical walkthrough builds may differ.
+- Leo mechanic taxonomy: proposed in this document; not approved or validated.
+- Candidate level audit: intentionally not started.
+
+### Next evidence pass
+
+The next pass should annotate a small but deliberate sample from the current mobile build (or a clearly identified browser build): early tutorial levels, several middle levels introducing new obstacle combinations, and later levels combining moving hazards. Record level identifier/build, objective, player input, obstacle/hazard, timing, failure condition, success feedback, retries and whether the level adds a genuinely new decision or merely rearranges known elements.
+
+Do not compare level numbers across versions unless the build and sequence are confirmed.
+
+## 24. Approval record
+
+- Research owner review: In progress
+- Product owner approval: Pending
+- Date approved: Pending
+- Version reviewed: 0.3
+- Changes required: Complete version-identified direct gameplay annotation for early, middle and later levels; revise the proposed Leo taxonomy based on that evidence; only then audit the candidate level catalogue.
