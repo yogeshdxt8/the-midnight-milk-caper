@@ -33,6 +33,8 @@ This log records durable project decisions. New decisions are appended; supersed
 
 | D-025 | Authorize greybox development for Chapter 1, Level 2 — “The Kid's Glass”. | Approved (2026-11-12) | Owner explicitly approved development of a low-fidelity playable greybox and its engineering/readability validation under `docs/validation/kids-glass-greybox-plan-v1-0.md`. Scope is limited to primitive placeholder geometry, deterministic authored interaction, single-tap intervention, reset/retry and validation evidence. It does not authorize detailed art/assets, production implementation/integration or release. The formal level design v1.0 remains authoritative; no new mechanics or objectives may be added. |
 
+| D-026 | Approve Responsive Rescue and Fair Intervention as the next Level 2 design direction for The Kid's Glass. | Approved (2026-11-12) | Owner explicitly approved the design direction after review of the v0.7.2 input-gating problem. Leo acknowledges early taps immediately without rescuing; actual rescue becomes actionable before the near-edge moment; an accepted tap immediately starts Leo's reach; the near-edge hesitation remains an additional fair opportunity; existing failure/fall/shatter remains. Leo stays the sole interactive target. No countdown, extra button, second objective or new mechanic. This approves the design direction/specification only, not implementation, a new greybox version, detailed art/assets, production integration or release. Specification: `docs/levels/chapter-01/level-02-kids-glass/responsive-rescue-design-v1-0.md`. |
+
 ## Decision record template
 
 For future entries, include:
