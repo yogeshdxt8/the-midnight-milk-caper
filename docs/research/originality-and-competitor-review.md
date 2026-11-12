@@ -2,7 +2,7 @@
 
 **Project:** The Midnight Milk Caper  
 **Document status:** Research draft — YouTube Playables is the primary platform and competitor-evidence environment; not approved  
-**Version:** 1.2  
+**Version:** 1.3  
 **Research note:** This is a design-risk assessment, not legal advice or a clearance opinion. Competitor descriptions are based on linked store/publisher sources and secondary gameplay references where identified. Broad product descriptions do not prove every mechanic; direct playthrough review remains necessary. The scan is not exhaustive.
 
 ## 1. Purpose
@@ -1217,3 +1217,132 @@ However, the revised version is a **single-action introductory interaction**, no
 - Greybox/animation validation: not performed.
 - Originality score: retain the provisional 16/21 only as a preliminary desk assessment; the Core interaction score of 2 is conditional on the revised interaction reading distinctly in play.
 - Production approval: not granted.
+
+
+## 36. Greybox interaction validation gate — The Dog's Bowl
+
+**Gate status: Defined; execution and evidence pending.** The project owner accepted the greybox interaction test as the next design gate. This is a validation prototype, not production implementation and not permission to begin detailed art production.
+
+### 36.1 Purpose
+
+Validate the bowl's initial resting pose, Leo's paw contact point, the bowl's rotation/translation arc, final upright resting pose, and the readability/consistency of the interaction before detailed art production.
+
+### 36.2 Minimum greybox contents
+
+- Primitive bowl proxy with a clearly modelled rim, curved outer wall and opening.
+- Flat ground plane with visible contact reference.
+- Simplified Leo body proxy sufficient to evaluate approach, bracing stance and paw contact.
+- Simplified dog proxy for composition and sightline only.
+- Fixed three-quarter camera.
+- Basic tap/click interaction target.
+- Debug visualization for contact point, rotation axis, pivot/contact progression and final pose.
+
+Exclude detailed character art, textures, lighting polish, particles, environment dressing, audio polish, UI decoration and unrelated gameplay systems.
+
+### 36.3 Geometry and motion hypotheses to test
+
+The design currently proposes an overturned bowl resting obliquely on its curved outer wall/rim. This is a hypothesis, not validated physical geometry.
+
+The greybox must establish:
+1. The starting bowl pose is stable on the floor before input.
+2. The raised curved wall provides a reachable, visible paw-contact surface.
+3. Leo can make contact without body/bowl intersection or an implausible stretched pose.
+4. The applied push produces a continuous, visually coherent roll toward upright.
+5. Floor contact progresses plausibly along the curved wall/rim; the bowl does not tunnel, snap or visibly pivot around an unexplained point.
+6. The final bowl base rests flat on the ground and its opening faces upward.
+7. The bowl remains stable after settling.
+
+Do not lock numeric geometry, mass, force, impulse, rotation angle or animation duration until the prototype demonstrates a credible solution. Capture the chosen values and coordinate conventions in the greybox notes after testing.
+
+### 36.4 Test sequence
+
+**Test A — Static stability**
+- Place the bowl in its proposed starting pose with no player input.
+- Observe whether it remains stable and whether its contact with the floor is legible.
+- Reject/revise any pose that tips, slides or looks physically impossible before interaction.
+
+**Test B — Reach and contact**
+- Place Leo in the proposed starting position.
+- Trigger the intended tap/click.
+- Inspect the paw contact point and Leo's bracing stance from the gameplay camera.
+- Confirm that the paw contacts the visible raised wall and that Leo does not stretch, clip or pass through the bowl.
+
+**Test C — Roll path**
+- Trigger the deterministic push.
+- Inspect the complete rotation and translation arc frame by frame.
+- Confirm continuous motion, plausible changing floor contact, no penetration, no unexplained axis jump and no visible teleport/snap.
+
+**Test D — Final rest**
+- Confirm the base contacts the floor across a stable footprint.
+- Confirm the opening is clearly upward and food access is visually obvious.
+- Leave the scene idle and verify no drift, wobble or delayed collapse.
+
+**Test E — Repeatability and input parity**
+- Repeat the same action from a reset state at least 20 times.
+- Compare starting pose, contact timing, motion path and final pose.
+- Test touch and mouse/click paths where available.
+- Confirm one input produces one push and repeated input during the animation is ignored.
+
+**Test F — Readability**
+- Show the greybox to first-time observers without explaining the solution.
+- Ask what is wrong, what they think Leo can do, where they expect the paw to contact, and what they expect the bowl to do.
+- Do not coach during the first observation.
+
+### 36.5 Acceptance criteria
+
+The greybox passes only when all mandatory physical criteria are met:
+
+| Criterion | Pass condition |
+|---|---|
+| Initial stability | Bowl remains stable before input |
+| Contact readability | Contact surface is visible from the gameplay camera |
+| Paw/body feasibility | Leo reaches and braces without clipping or stretching |
+| Motion continuity | Bowl follows one continuous coherent roll |
+| Floor interaction | No visible penetration, teleport or unexplained pivot |
+| Final rest | Base flat, opening up, stable after settling |
+| Determinism | 20/20 identical reset trials produce the same authored result |
+| Input parity | Touch and mouse trigger equivalent outcomes |
+| Input lock | No duplicate push during an active roll |
+
+Readability target: at least 80% of first-time observers should identify the bowl as the problem object and understand that Leo is attempting to push/roll it without written instructions. This is a proposed target, not a measured result.
+
+### 36.6 Required evidence package
+
+Before the gate review, record:
+- Screenshot of initial bowl pose with floor contact marked.
+- Screenshot of Leo's paw contact point and bracing pose.
+- At least three motion captures: start of push, mid-roll/contact progression, final upright pose.
+- Side-view and gameplay-camera views.
+- Short capture of one complete interaction.
+- 20-run repeatability results.
+- Touch/mouse parity result.
+- List of geometry/animation parameters selected and any known limitations.
+- First-time observer notes for readability.
+
+### 36.7 Failure handling
+
+- If the initial pose is unstable, change bowl geometry or resting orientation.
+- If Leo cannot contact the surface naturally, change bowl placement, size or Leo's stance; do not stretch the paw.
+- If the roll path looks implausible, revise the starting pose and contact location before tuning animation speed.
+- If the bowl does not settle stably, revise the final pose and floor/base relationship.
+- If the contact surface is not understood, improve silhouette, camera or staging before adding instructional UI.
+- Do not hide a failed physical setup with camera tricks, visual effects or arbitrary snapping.
+
+### 36.8 Gate decision
+
+Possible outcomes:
+- **PASS:** All mandatory physical criteria pass and readability target is met. Proceed to review the revised interaction contract and level concept for approval.
+- **CONDITIONAL PASS:** Physical behaviour is sound but one non-critical readability or presentation issue remains. Only the named issue may be revised and retested.
+- **FAIL / REDESIGN:** Any core physical criterion fails. Revise geometry/contact/motion and repeat the greybox gate.
+
+A pass does not itself grant production approval. Detailed art production remains blocked until the project owner reviews the evidence and explicitly approves the level.
+
+### 36.9 Current status
+
+- Greybox gate: defined.
+- Greybox prototype: not yet built or executed.
+- Starting pose: unvalidated hypothesis.
+- Contact point: unvalidated hypothesis.
+- Rotation arc: unvalidated hypothesis.
+- Final resting pose: unvalidated hypothesis.
+- Detailed art production: blocked pending gate pass and owner approval.
