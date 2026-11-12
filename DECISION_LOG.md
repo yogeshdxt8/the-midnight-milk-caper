@@ -31,6 +31,8 @@ This log records durable project decisions. New decisions are appended; supersed
 
 | D-024 | Formally approve Chapter 1, Level 2 — “The Kid's Glass” at the level-design stage. | Approved (2026-11-12) | Owner explicitly approved the formal level-design specification v1.0 after Formal Originality Review v1.0 (17/21; D-020 passed). Approval is limited to level design. It does not authorize greybox development/validation, detailed art or asset production, production implementation, or release; each requires a separate explicit approval. Authoritative specification: `docs/levels/chapter-01/level-02-kids-glass/level-design-v1-0.md`. |
 
+| D-025 | Authorize greybox development for Chapter 1, Level 2 — “The Kid's Glass”. | Approved (2026-11-12) | Owner explicitly approved development of a low-fidelity playable greybox and its engineering/readability validation under `docs/validation/kids-glass-greybox-plan-v1-0.md`. Scope is limited to primitive placeholder geometry, deterministic authored interaction, single-tap intervention, reset/retry and validation evidence. It does not authorize detailed art/assets, production implementation/integration or release. The formal level design v1.0 remains authoritative; no new mechanics or objectives may be added. |
+
 ## Decision record template
 
 For future entries, include:
