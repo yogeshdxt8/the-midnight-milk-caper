@@ -31,11 +31,25 @@ The owner approved a focused v0.8.1 refinement after reporting that v0.8.0's ran
 - JavaScript syntax check passed with Node.js.
 - The v0.8.1 HTML and ZIP package were generated.
 
-## Owner Android feedback
+## Owner Android feedback — perceptibility
 
 The owner confirmed that the v0.8.1 attempts now feel noticeably different in speed and that the edge shudder and Leo's anticipation are noticeable.
 
-This confirms the targeted perceptibility refinement. It does not yet establish the complete greybox gate: early/middle/late intervention fairness, immediate response on valid taps, pre-slide tap behaviour, no-input fall/shatter, and repeatability still require explicit evidence/review.
+## Owner Android recording review — intervention and failure
+
+The owner supplied an approximately 30-second Android screen recording on 2026-11-12. Review of the visible state and outcome panels shows:
+
+- At least two successful rescue sequences, including Leo entering Bracing and the glass reaching Saved.
+- The sequence was replayed multiple times.
+- A no-input attempt progressed through NearEdge, FinalSlip, Falling and Failed, with the glass visibly shattering.
+
+This is evidence for successful rescue, replay and the no-input failure/shatter path on the recorded device. The recording does not conclusively label each successful tap as early, middle or late, nor prove the full range of intervention fairness or precise input latency. Do not mark those subtests as passed solely from this recording.
+
+## Remaining evidence
+
+- Explicitly identify and verify early, middle and late rescue attempts, including the latest fair intervention point.
+- Verify immediate response on accepted taps and pre-slide tap behaviour.
+- Confirm touch-target consistency and repeatability across further attempts if required by the gate plan.
 
 ## Gate status
 
