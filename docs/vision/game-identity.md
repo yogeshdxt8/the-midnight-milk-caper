@@ -1,8 +1,8 @@
 # Game Design Bible 01 — Product Vision
 
 **Project:** The Midnight Milk Caper  
-**Document status:** Proposed — audience and milk-motivation directions approved; remaining product decisions pending  
-**Version:** 0.3  
+**Document status:** Proposed — audience, milk-motivation and level-duration directions approved; remaining product decisions pending  
+**Version:** 0.4  
 **Authority:** Game Design Bible; subordinate to current official platform requirements
 
 ## 1. Product statement
@@ -56,11 +56,14 @@ These are design intentions, not yet validated usability or engagement results.
 - **Primary genre:** casual adventure-puzzle.
 - **Supporting qualities:** character comedy, environmental interaction, light exploration and situational problem-solving.
 - **Session structure:** short, self-contained levels suitable for quick play sessions.
+- **Initial level-duration target (approved):** approximately 1–3 minutes of active play, depending on the complexity of the level.
+  - **Simple levels:** approximately 1 minute.
+  - **Standard puzzles:** approximately 2 minutes.
+  - **More involved adventures:** approximately 3 minutes.
+- These are design targets, not countdown limits. A level should not rush the player merely to meet its target. Actual completion-time distributions must be checked through playtesting and may lead to revisions.
 - **Primary input:** touch, designed around simple one-finger interaction where practical.
 - **Required additional input:** mouse support for YouTube Playables, including menus and core gameplay.
 - **Platform sequence:** YouTube Playables first; Open Web and Android intended to reuse the shared game core.
-
-The exact average level duration, difficulty curve and session length remain to be established through prototypes and playtesting after design approval.
 
 ## 6. Protagonist and player relationship
 
@@ -159,12 +162,13 @@ The current official Google Playables documentation is authoritative and must be
 
 ## 12. Success criteria to validate
 
-The following are product hypotheses, not measured outcomes:
+The following are product hypotheses, not measured results:
 - A new player can identify the immediate goal quickly.
 - A player can perform the primary action without a lengthy tutorial.
 - Leo's reactions make the experience more expressive and memorable.
 - Levels feel meaningfully different even when they reuse underlying systems.
 - Players can recover from mistakes without frustration.
+- Most levels can deliver a satisfying experience within their intended duration band without artificial rushing.
 - The game remains readable and responsive across supported aspect ratios and input methods.
 - The game can meet current Playables technical and certification requirements.
 
@@ -180,19 +184,20 @@ Unless separately approved, the product is not intended to become:
 - A resource/currency-driven progression system added only to decorate menus.
 - A dialogue-heavy narrative game.
 - A collection of reskinned levels with identical solutions.
+- A timed speed-run experience in which all levels force players to finish within the duration targets.
 
 ## 14. Open decisions for approval
 
-1. **Level duration:** Should the initial design target be approximately 1–3 minutes per level, subject to playtesting?
-2. **Difficulty:** Should the game start extremely accessible and build toward clever multi-step challenges without requiring precision timing as the dominant skill?
-3. **Failure model:** Should most levels allow immediate retries/checkpoints rather than limited lives?
-4. **Progression:** Should chapter/level completion be the primary progression system, with no currency economy unless a concrete design need is established?
-5. **Scope:** Is 50 levels a fixed launch target or a planning target that can be adjusted after vertical-slice validation?
+1. **Difficulty:** Should the game start extremely accessible and build toward clever multi-step challenges without requiring precision timing as the dominant skill?
+2. **Failure model:** Should most levels allow immediate retries/checkpoints rather than limited lives?
+3. **Progression:** Should chapter/level completion be the primary progression system, with no currency economy unless a concrete design need is established?
+4. **Scope:** Is 50 levels a fixed launch target or a planning target that can be adjusted after vertical-slice validation?
 
 ## 15. Approval record
 
 - Audience positioning: Approved — broad casual audience, 13+.
 - Milk motivation: Approved — signature motivation and emotional thread; not every level requires obtaining milk.
+- Level duration: Approved initial target — 1–3 minutes by complexity; no forced timer; validate through playtesting.
 - Remaining product vision approval: Pending.
 - Date approved: Pending.
 - Changes required: Remaining open decisions above.
