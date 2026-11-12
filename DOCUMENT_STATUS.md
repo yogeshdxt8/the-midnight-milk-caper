@@ -14,8 +14,8 @@ This register is the index of authoritative project specifications and their app
 
 | Document / workstream | Location | Current status | Next action |
 |---|---|---|---|
-| Project vision and identity | `docs/vision/game-identity.md` | Approved direction; full document pending | Consolidate and review the complete product vision. |
-| Research and originality | `docs/research/originality-and-competitor-review.md` | Draft; not fully approved | Expand competitor analysis and document differentiation. |
+| Product Vision — Game Design Bible 01 | `docs/vision/game-identity.md` | Proposed v0.1; submitted for owner review | Resolve the seven open product decisions and approve/revise. |
+| Originality Research — Game Design Bible 02 | `docs/research/originality-and-competitor-review.md` | Research draft v0.1; initial scan, not approved | Deepen Thief Puzzle and casual-game evidence; compare all candidate levels. |
 | Character Bible — Leo | `docs/characters/leo-character-bible.md` | Approved direction; detailed spec in progress | Finalize identity and technical character specifications. |
 | World and location Bible | `docs/characters/` and `docs/levels/` | Not started | Define recurring locations and continuity rules. |
 | Gameplay and interaction systems | `docs/game-design/` | Not started | Define controls, interaction taxonomy and reusable systems. |
@@ -33,3 +33,4 @@ A document is not approved merely because it exists, has been generated, or has 
 ## Change history
 
 - Initial register created during repository initialization.
+- Added Game Design Bible 01 and 02 drafts; both are awaiting project-owner review.
