@@ -15,7 +15,7 @@ This register is the index of authoritative project specifications and their app
 | Document / workstream | Location | Current status | Next action |
 |---|---|---|---|
 | Product Vision — Game Design Bible 01 | `docs/vision/game-identity.md` | **Approved v0.9** | Proceed to Game Design Bible 02 — Originality Research; retain normal change control for future revisions. |
-| Originality Research — Game Design Bible 02 | `docs/research/originality-and-competitor-review.md` | Research draft v0.6; YouTube Playables is the primary platform and evidence environment; Levels 1–9 recording received; not approved | Annotate middle and later YouTube Playables samples; refine Leo's mechanic taxonomy; then audit candidate level concepts. Native mobile and Famobi browser builds are secondary context only. |
+| Originality Research — Game Design Bible 02 | `docs/research/originality-and-competitor-review.md` | Research draft v0.7; YouTube Playables primary; Levels 1–9 and 10–20 recordings received; not approved | Obtain and annotate later Playables sample (approximately Levels 35–40); complete cross-sample interaction taxonomy; refine Leo's mechanic taxonomy; then audit candidate level concepts. Native mobile and Famobi browser builds are secondary context only. |
 | Character Bible — Leo | `docs/characters/leo-character-bible.md` | Approved direction; detailed spec in progress | Finalize identity and technical character specifications. |
 | World and location Bible | `docs/characters/` and `docs/levels/` | Not started | Define recurring locations and continuity rules. |
 | Gameplay and interaction systems | `docs/game-design/` | Not started | Define controls, interaction taxonomy and reusable systems. |
@@ -50,3 +50,4 @@ A document is not approved merely because it exists, has been generated, or has 
 - 2026-11-12: Project owner confirmed YouTube Playables as the primary product/release target and primary Thief Puzzle research environment. The supplied Levels 1–9 recording is the first Playables evidence sample; middle and later Playables samples are the next milestone. Native mobile and Famobi browser builds are secondary context only.
 - Expanded Game Design Bible 02 to v0.6 to correct the evidence hierarchy and next research milestone. Bible 02 remains a draft pending middle/later Playables sampling and originality analysis.
 
+- Expanded Game Design Bible 02 to v0.7 with a preliminary visual annotation of the user-supplied YouTube Playables Levels 10–20 recording. Levels 1–20 are now represented in primary Playables evidence; later-level sampling and detailed interaction classification remain outstanding. Bible 02 remains unapproved.
