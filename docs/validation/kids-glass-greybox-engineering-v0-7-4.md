@@ -20,12 +20,13 @@ Owner reported that Leo did not appear tappable until the glass reached the end 
 - ZIP package created with `index.html` and README.
 
 ## Owner validation
-- Owner confirmed that Leo is now tappable during the slide after testing v0.7.4 on Android.
-- This confirms the reported late-only hit-target defect is corrected in the tested scenario.
+- Owner confirmed on Android that Leo is tappable during the slide.
+- Owner additionally confirmed all three requested gameplay checks: an early-slide tap saves the glass immediately, a near-edge tap still succeeds, and leaving the glass untouched results in the existing fall-and-shatter outcome.
+- This confirms the responsive-rescue interaction path and no-input failure outcome in the owner's tested scenarios.
 
 ## Not yet validated
-- Whether early, middle and near-edge taps all produce consistent, immediate rescue.
-- Whether the actionable threshold and rescue window feel fair without repeated tapping.
-- Complete end-to-end no-input fall/shatter and repeatability after this correction.
+- Repeatability across multiple trials and touch/mouse parity.
+- Spontaneous player comprehension of the rescue window without instructional cues.
+- Full greybox gate criteria, including causal readability and overall level clarity.
 
 **Disposition:** The specific Leo hit-target defect is owner-confirmed corrected. Greybox gate remains OPEN. This note does not authorize detailed art, production integration or release.
