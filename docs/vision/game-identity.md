@@ -1,8 +1,8 @@
 # Game Design Bible 01 — Product Vision
 
 **Project:** The Midnight Milk Caper  
-**Document status:** Proposed — ready for project-owner review  
-**Version:** 0.1  
+**Document status:** Proposed — audience direction approved; remaining product decisions pending  
+**Version:** 0.2  
 **Authority:** Game Design Bible; subordinate to current official platform requirements
 
 ## 1. Product statement
@@ -24,7 +24,22 @@ The player should leave a level thinking:
 - That situation had a funny or surprising payoff.
 - I want to see what Leo gets into next.
 
-## 3. Intended experience
+## 3. Intended audience and content positioning
+
+**Approved audience direction: 13+ broad casual audience.**
+
+The game is intended for a broad casual audience aged 13 and above, rather than being designed exclusively for young children. Its colourful character-led presentation and accessible controls can still be welcoming to a wide range of players, but the creative tone, humour, challenge and product messaging should not assume a child-only audience.
+
+Content direction:
+- Keep the experience broadly approachable and suitable for general audiences.
+- Humour should be clever, character-driven and broadly understandable without being babyish or patronizing.
+- Avoid relying on mature, graphic or shocking content to create humour.
+- Do not market or position the game specifically as a product for young children.
+- Treat 13+ as the intended audience positioning, not as a verified platform age rating or formal content classification. Any store/platform rating must be determined through the applicable rating process.
+
+This audience decision does not itself settle monetization, advertising, privacy, analytics or platform account requirements; those require separate policy and product decisions.
+
+## 4. Intended experience
 
 The intended experience is:
 - **Immediate:** the scene communicates its situation quickly, without a long explanation.
@@ -36,7 +51,7 @@ The intended experience is:
 
 These are design intentions, not yet validated usability or engagement results.
 
-## 4. Genre and format
+## 5. Genre and format
 
 - **Primary genre:** casual adventure-puzzle.
 - **Supporting qualities:** character comedy, environmental interaction, light exploration and situational problem-solving.
@@ -47,7 +62,7 @@ These are design intentions, not yet validated usability or engagement results.
 
 The exact average level duration, difficulty curve and session length remain to be established through prototypes and playtesting after design approval.
 
-## 5. Protagonist and player relationship
+## 6. Protagonist and player relationship
 
 Leo is the central protagonist and the player's primary avatar.
 
@@ -62,33 +77,33 @@ Current approved direction:
 
 The detailed production model, coat-marking geometry, exact proportions, final palette and animation set remain under character specification and validation.
 
-## 6. Core gameplay philosophy
+## 7. Core gameplay philosophy
 
-### 6.1 Leo is the actor
+### 7.1 Leo is the actor
 
 The player should usually act through Leo rather than solve every level by manipulating detached objects while Leo waits passively. Object interaction is valuable when it is clearly connected to Leo's body, movement, curiosity or immediate situation.
 
-### 6.2 One level, one memorable situation
+### 7.2 One level, one memorable situation
 
 Each level should have a distinct central situation and a clear player-facing objective. A level may contain several steps, but it should not become an arbitrary sequence of unrelated chores.
 
-### 6.3 Reuse systems, not level experiences
+### 7.3 Reuse systems, not level experiences
 
 Shared movement, interaction, timing, object and feedback systems are desirable. Repeating the same puzzle structure with different props is not. Each level needs a distinct decision pattern, spatial situation, character dynamic or payoff.
 
-### 6.4 Make the outcome legible
+### 7.4 Make the outcome legible
 
 Players should understand what their action changed. Use animation, sound, character reactions and environmental feedback to communicate cause and effect.
 
-### 6.5 Let comedy emerge from play
+### 7.5 Let comedy emerge from play
 
 Prefer funny consequences that result from the player's action and the characters' behaviour. Avoid relying only on text jokes or cutscenes.
 
-### 6.6 Keep failure friendly
+### 7.6 Keep failure friendly
 
 Failure should be understandable, recoverable and proportionate. Avoid punitive waits, confusing resets and situations where the player cannot tell why an attempt failed.
 
-## 7. Content scope
+## 8. Content scope
 
 The current planning target is 50 levels arranged as five chapters of ten levels each. This is a proposed production scope, not a promise that all 50 concepts are already designed or validated.
 
@@ -101,7 +116,7 @@ The candidate chapter themes are:
 
 These names and the current candidate level list remain provisional. Each level must pass originality, variety, clarity, feasibility and Playables suitability review before entering the approved catalogue.
 
-## 8. Visual and audio direction
+## 9. Visual and audio direction
 
 Approved visual direction:
 - Polished, dimensional cartoon presentation.
@@ -117,7 +132,7 @@ Approved audio direction:
 
 Specific art style, production pipeline, animation budgets, sound library, screen layouts and asset specifications require separate approval.
 
-## 9. Product principles
+## 10. Product principles
 
 1. Character before gimmick.
 2. Player agency before passive spectacle.
@@ -128,7 +143,7 @@ Specific art style, production pipeline, animation budgets, sound library, scree
 7. One shared game core with platform adapters.
 8. Design and validation before implementation.
 
-## 10. Platform and production constraints
+## 11. Platform and production constraints
 
 YouTube Playables is the primary design and technical target. Design must account for:
 - Responsive portrait and landscape layouts and changing viewport sizes.
@@ -141,7 +156,7 @@ YouTube Playables is the primary design and technical target. Design must accoun
 
 The current official Google Playables documentation is authoritative and must be rechecked before implementation and release. See the platform research register and the official sources linked below.
 
-## 11. Success criteria to validate
+## 12. Success criteria to validate
 
 The following are product hypotheses, not measured outcomes:
 - A new player can identify the immediate goal quickly.
@@ -154,7 +169,7 @@ The following are product hypotheses, not measured outcomes:
 
 These hypotheses require usability testing, level playtests, performance testing and platform validation.
 
-## 12. Explicit non-goals
+## 13. Explicit non-goals
 
 Unless separately approved, the product is not intended to become:
 - A broad open-world sandbox on the scale of a premium adventure game.
@@ -165,18 +180,18 @@ Unless separately approved, the product is not intended to become:
 - A dialogue-heavy narrative game.
 - A collection of reskinned levels with identical solutions.
 
-## 13. Open decisions for approval
+## 14. Open decisions for approval
 
-1. **Audience positioning:** Is the intended audience broad casual players and families, with general-audience content, rather than a game specifically directed at children?
-2. **Milk as motivation:** Should milk remain Leo's signature recurring motivation while some levels have objectives that are not literally about obtaining milk?
-3. **Level duration:** Should the initial design target be approximately 1–3 minutes per level, subject to playtesting?
-4. **Difficulty:** Should the game start extremely accessible and build toward clever multi-step challenges without requiring precision timing as the dominant skill?
-5. **Failure model:** Should most levels allow immediate retries/checkpoints rather than limited lives?
-6. **Progression:** Should chapter/level completion be the primary progression system, with no currency economy unless a concrete design need is established?
-7. **Scope:** Is 50 levels a fixed launch target or a planning target that can be adjusted after vertical-slice validation?
+1. **Milk as motivation:** Should milk remain Leo's signature recurring motivation while some levels have objectives that are not literally about obtaining milk?
+2. **Level duration:** Should the initial design target be approximately 1–3 minutes per level, subject to playtesting?
+3. **Difficulty:** Should the game start extremely accessible and build toward clever multi-step challenges without requiring precision timing as the dominant skill?
+4. **Failure model:** Should most levels allow immediate retries/checkpoints rather than limited lives?
+5. **Progression:** Should chapter/level completion be the primary progression system, with no currency economy unless a concrete design need is established?
+6. **Scope:** Is 50 levels a fixed launch target or a planning target that can be adjusted after vertical-slice validation?
 
-## 14. Approval record
+## 15. Approval record
 
-- Product owner approval: Pending
-- Date approved: Pending
-- Changes required: Pending
+- Audience positioning: Approved — broad casual audience, 13+.
+- Remaining product vision approval: Pending.
+- Date approved: Pending.
+- Changes required: Remaining open decisions above.
