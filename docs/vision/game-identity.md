@@ -107,6 +107,27 @@ Prefer funny consequences that result from the player's action and the character
 
 Failure should be understandable, recoverable and proportionate. Avoid punitive waits, confusing resets and situations where the player cannot tell why an attempt failed.
 
+## 8. Failure and retry philosophy
+
+**Approved failure-model direction:**
+- Unlimited retries; no limited-lives system.
+- No energy system or waiting period between attempts.
+- Failed attempts must have understandable consequences and feedback.
+- Restarting a puzzle should be quick and straightforward.
+- For multi-stage levels, consider checkpoints when restarting from the beginning would create unnecessary frustration.
+- Where appropriate, failure itself can create a funny or interesting moment; it should not punish experimentation.
+
+Checkpoints are a level-design tool, not a mandatory feature in every level. Their placement and reset behaviour must be specified per level and validated in playtests.
+
+## 9. Difficulty progression
+
+**Approved progression direction:**
+- **Early levels (1–10):** Very accessible. Teach movement and basic interactions naturally.
+- **Middle levels (11–30):** Introduce combinations of mechanics, observation and clever decisions.
+- **Later levels (31–50):** More challenging multi-step puzzles, unexpected situations and creative solutions.
+
+This is a progression framework, not a promise that every level in a numerical band has identical difficulty. Individual levels must still be playtested for clarity, fairness and pacing. Precision timing should not become the dominant measure of skill; it may appear when appropriate to a level's central idea.
+
 ## 10. Content scope
 
 The intended overall journey is planned around 50 levels arranged as five chapters of ten levels each. This is a planning target, not a fixed launch requirement or a promise that all 50 concepts are already designed or validated. All five chapters should be designed as the intended overall journey. A representative vertical slice must be built and validated before production scope is committed. Production effort, level quality, variety and feasibility should then be assessed; the launch level count may be adjusted if the evidence warrants it.
@@ -196,27 +217,6 @@ Unless separately approved, the product is not intended to become:
 - A dialogue-heavy narrative game.
 - A collection of reskinned levels with identical solutions.
 - A timed speed-run experience in which all levels force players to finish within the duration targets.
-
-## 8. Failure and retry philosophy
-
-**Approved failure-model direction:**
-- Unlimited retries; no limited-lives system.
-- No energy system or waiting period between attempts.
-- Failed attempts must have understandable consequences and feedback.
-- Restarting a puzzle should be quick and straightforward.
-- For multi-stage levels, consider checkpoints when restarting from the beginning would create unnecessary frustration.
-- Where appropriate, failure itself can create a funny or interesting moment; it should not punish experimentation.
-
-Checkpoints are a level-design tool, not a mandatory feature in every level. Their placement and reset behaviour must be specified per level and validated in playtests.
-
-## 9. Difficulty progression
-
-**Approved progression direction:**
-- **Early levels (1–10):** Very accessible. Teach movement and basic interactions naturally.
-- **Middle levels (11–30):** Introduce combinations of mechanics, observation and clever decisions.
-- **Later levels (31–50):** More challenging multi-step puzzles, unexpected situations and creative solutions.
-
-This is a progression framework, not a promise that every level in a numerical band has identical difficulty. Individual levels must still be playtested for clarity, fairness and pacing. Precision timing should not become the dominant measure of skill; it may appear when appropriate to a level's central idea.
 
 ## 18. Open decisions for approval
 
