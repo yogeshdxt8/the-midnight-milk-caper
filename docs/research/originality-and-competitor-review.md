@@ -2,7 +2,7 @@
 
 **Project:** The Midnight Milk Caper  
 **Document status:** Research draft — expanded competitor evidence and originality framework; not approved  
-**Version:** 0.3  
+**Version:** 0.4  
 **Research note:** This is a design-risk assessment, not legal advice or a clearance opinion. Competitor descriptions are based on linked store/publisher sources and secondary gameplay references where identified. Broad product descriptions do not prove every mechanic; direct playthrough review remains necessary. The scan is not exhaustive.
 
 ## 1. Purpose
@@ -428,7 +428,24 @@ This is a **proposal for our own design vocabulary**, not a list of already appr
 | Follow a rhythm | Act in relation to repeating environmental beats | Paw taps and attentive movement | Rhythm is an occasional level grammar, not a new global genre |
 | Commit / abort | Decide whether to continue or retreat from a risky action | Body tension and readable anticipation | Give clear feedback; avoid opaque reaction-time traps |
 
-### 20.7 Candidate mechanic families
+### 20.7 Core design principle — reusable vocabulary, varied situations
+
+**Agreed design direction:** The game should not depend on one signature mechanic repeated across 50 levels. It should use a small, reusable vocabulary of kitten abilities that can be combined in different ways to create genuinely distinct situations, decisions and outcomes.
+
+This is a product-level design principle, not a requirement to invent dozens of unrelated mechanics. Reuse is desirable at the system level; repetition is not desirable at the player-experience level.
+
+Apply the distinction as follows:
+
+- **Reuse abilities:** Leo's walk, jump, climb, paw interaction, observation and other validated abilities can recur across many levels.
+- **Vary the problem:** A returning ability should serve a different purpose, spatial relationship, timing decision, social situation or consequence.
+- **Combine selectively:** Two or more abilities may combine when their interaction creates a new decision. Do not combine mechanics merely to make a level busier.
+- **Keep the vocabulary small:** Prefer a few expressive, learnable abilities with meaningful depth over a large catalogue of one-off controls.
+- **Protect level identity:** A level should be remembered for its situation and player decisions, not just for which ability it introduces.
+- **Measure experience-level repetition:** Compare the actual player task, dominant decision and solution pattern across levels. Different props do not make the same task original.
+
+A useful design test is: **If the props, setting and target were replaced, would the player still be solving essentially the same problem in essentially the same way?** If yes, the level needs a more meaningful distinction.
+
+### 20.8 Candidate mechanic families
 
 For planning, the taxonomy can be grouped into six families:
 1. **Move:** locomotion and body control.
