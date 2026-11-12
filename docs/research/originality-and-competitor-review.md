@@ -1,9 +1,11 @@
 # Game Design Bible 02 — Originality and Competitive Research
 
 **Project:** The Midnight Milk Caper  
-**Document status:** Research draft — YouTube Playables is the primary platform and competitor-evidence environment; not approved  
-**Version:** 1.3  
+**Document status:** Review draft v1.4 — reconciled against approved decisions and completed Dog's Bowl greybox evidence; not approved as a whole  
+**Version:** 1.4  
 **Research note:** This is a design-risk assessment, not legal advice or a clearance opinion. Competitor descriptions are based on linked store/publisher sources and secondary gameplay references where identified. Broad product descriptions do not prove every mechanic; direct playthrough review remains necessary. The scan is not exhaustive.
+
+> **Version 1.4 authority note:** Sections 1–36 preserve the research and design history accumulated through v1.3. Where those sections contain earlier pending statuses, proposed gate language or conflicting rubric wording, Section 37 is the current authoritative reconciliation. Historical entries are retained for traceability and must not be read as current status. Approved project decisions D-020, D-021, D-022 and D-023 take precedence over older draft wording.
 
 ## 1. Purpose
 
@@ -1346,3 +1348,147 @@ A pass does not itself grant production approval. Detailed art production remain
 - Rotation arc: unvalidated hypothesis.
 - Final resting pose: unvalidated hypothesis.
 - Detailed art production: blocked pending gate pass and owner approval.
+
+
+## 37. Version 1.4 — authoritative reconciliation and current review baseline
+
+### 37.1 Authority and precedence
+
+This section reconciles the accumulated v1.3 research with decisions and evidence recorded after the earlier draft sections were written. It is authoritative for the current review state.
+
+Precedence:
+1. Explicitly approved project-owner decisions in `DECISION_LOG.md`.
+2. The current approved Product Vision and project governance.
+3. The current approved Dog's Bowl greybox gate assessment and its supporting engineering evidence.
+4. This v1.4 reconciliation.
+5. Earlier proposal/history sections in this document, which remain useful for traceability but are superseded wherever their status or wording conflicts with the above.
+
+This document remains a review draft. The approval of the Dog's Bowl greybox is not approval of Game Design Bible 02 as a whole.
+
+### 37.2 Originality rubric — single governing rule
+
+The seven-criterion, 0–3 originality rubric in Section 14 is the governing rubric. The older abbreviated description in Section 7 is historical and must not weaken the mandatory gate.
+
+**Mandatory NO-GO gate (Decision D-020):**
+- Any candidate level scoring **0 or 1 in Player Role OR Core Interaction** is automatically **NO-GO**.
+- The candidate must be rejected or redesigned before entering the production backlog.
+- A high aggregate score cannot compensate for either gatekeeper failure.
+- After redesign, rescore the level against evidence.
+- A score of 0 in Objective/Structure or Presentation also requires redesign under the rubric's additional review rule.
+- This is an internal creative-risk control, not legal clearance or a legal test.
+
+Every level review must record all seven criterion scores, concise evidence-based rationales, the closest reference, the dominant player decision, and the gate result. Desk-review scores remain provisional until validated in a playable experience.
+
+### 37.3 Competitor evidence boundary — confirmed
+
+The primary competitor evidence is the user-supplied **Thief Puzzle YouTube Playables Levels 1–20** sample:
+- Recording one: Levels 1–9.
+- Recording two: Levels 10–20.
+- The build/version identifier is not confirmed.
+- The evidence supports one dominant reach/route-to-target interaction family with changing scene, target, obstacle, hazard and social-context modifiers.
+- It does not establish every exact input, collision rule or solution detail for every level.
+- It does not support claims about later-game mechanics or progression beyond Level 20.
+
+Levels 35–40 remain intentionally excluded from this research pass. This is a deliberate scope boundary, not an outstanding footage request. Famobi browser and native mobile evidence remains secondary context and must not be silently merged with Playables observations or assumed to have build parity.
+
+### 37.4 Leo mechanic taxonomy — current status and interpretation
+
+The eight conceptual families in Section 32 remain the current **proposed design vocabulary**, not approved production systems:
+
+1. Locomotion and body control.
+2. Perception and investigation.
+3. Paw and object interaction.
+4. Balance and physical control.
+5. Hide, fit and navigate.
+6. Social and animal interaction.
+7. Timing and commitment.
+8. Environmental cause-and-effect.
+
+The proposed initial core candidates remain:
+- Locomotion and body control.
+- Paw and object interaction.
+- Perception and investigation.
+- Balance and physical control.
+
+The proposed supporting candidates remain:
+- Hide, fit and navigate.
+- Social and animal interaction.
+- Timing and commitment.
+- Environmental cause-and-effect.
+
+These categories are hypotheses for organizing player decisions, not a commitment to implement eight systems. Closely related verbs may share one system when they create the same player decision. A family should only be promoted to an approved mechanic after its player decision, input, feedback, success/failure/recovery, Leo-specific value, accessibility and reusable level applications are specified and reviewed.
+
+The core design principle remains: **Reuse a small vocabulary of embodied kitten abilities; vary the decisions, relationships and consequences.**
+
+### 37.5 Dog's Bowl — current case-study status
+
+Chapter 1, Level 1 — **The Dog's Bowl** remains the first originality stress-test case.
+
+Current authoritative status:
+- Paw-rock-the-bowl is the selected interaction direction.
+- The v0.5 visual baseline is frozen under D-021.
+- Deterministic kinematic animation is approved under D-022; exact no-slip rigid-body rolling is not required.
+- The v3.2.1 full-visible-bowl hit area was tested by the owner across four separated bowl regions and all four triggered the push.
+- Four complete mouse telemetry runs reached the common authored final pose.
+- The latest touch telemetry contained eight attempts: four reached the final pose and four ended early for an unknown reason. The incomplete runs must not be represented as completed tests.
+- The owner explicitly approved the **Conditional Pass** greybox gate on 2026-11-12 under D-023, accepting the documented residual evidence limitations.
+- The input-validation workstream is closed; the v3.2.1 hit-area implementation remains frozen.
+
+The gate approval is limited to the greybox. It does **not** approve detailed art, production implementation, release, or Bible 02 as a whole.
+
+The original desk-review originality score remains **provisional 16/21** (Player Role 3; Core Interaction 2). The greybox engineering gate does not automatically validate or increase that originality score. The level's embodied paw interaction is a useful example distinct from the competitor's continuous reach-route grammar, but one level does not prove the full taxonomy or level catalogue is sufficiently varied.
+
+Authoritative assessment: `docs/validation/dogs-bowl-greybox-gate-assessment-v1-0.md`.
+
+### 37.6 Candidate-level originality audit — next analytical work
+
+The candidate-level audit has not yet been completed. It must not be described as complete merely because Dog's Bowl has been stress-tested.
+
+For each existing candidate concept, the audit should record:
+- Level identifier and current concept status.
+- Player role and player-facing objective.
+- Dominant and supporting mechanic families (provisional labels are acceptable).
+- Main player decision and input grammar.
+- Setup, challenge progression and resolution.
+- Why Leo's body/personality matter.
+- Character payoff.
+- Closest competitor/reference and the five-layer comparison.
+- Seven rubric scores with rationales.
+- Mandatory gate outcome and redesign actions, if any.
+- Evidence confidence and unresolved questions.
+
+Compare candidates side by side to detect repetition across the catalogue. Replacing a target, prop, room, character or background does not create a distinct level if the player still makes essentially the same decision and executes the same solution.
+
+Do not invent or fill a 50-level catalogue solely to complete a scoring exercise. Audit the actual candidate concepts already present in the repository, identify missing concept coverage, and report gaps honestly.
+
+### 37.7 Research conclusions and limitations
+
+The strongest current differentiation hypothesis remains a compact series of character-led, authored adventures in which Leo is an embodied player-controlled kitten and the situation creates varied decisions and comic payoffs. Milk is a signature motivation and emotional thread, not a mandatory repeated objective.
+
+The competitor sample supports a bounded conclusion about Thief Puzzle's dominant early-to-middle Playables interaction grammar. It does not establish originality, legal clearance, full competitor coverage, late-game behaviour, or the quality of an unbuilt complete level catalogue.
+
+This document must not claim:
+- That all eight Leo mechanic families are implemented, validated or approved.
+- That all 50 levels have been audited.
+- That Dog's Bowl's conditional greybox approval authorizes detailed art or production.
+- That the bounded Levels 1–20 sample establishes Thief Puzzle's late-game mechanics.
+- That a rubric score constitutes legal/IP clearance.
+
+### 37.8 Current status and next gate
+
+- Product Vision — Game Design Bible 01 v0.9: approved.
+- Game Design Bible 02 v1.4: **review draft; not approved as a whole**.
+- Thief Puzzle YouTube Playables evidence: bounded Levels 1–20 sample reviewed; build/version remains unconfirmed.
+- Leo mechanic taxonomy v0.2: proposed; not approved as a production feature list.
+- Dog's Bowl greybox: Conditional Pass explicitly approved under D-023; scope limited to greybox gate.
+- Candidate-level originality audit: next analytical work; not yet completed.
+- Detailed art and production implementation: not authorized by this document or the Dog's Bowl gate approval.
+
+**Next action:** complete the candidate-level originality audit against the actual repository concepts, then present Bible 02 for project-owner review. No production coding is authorized by this next step.
+
+### 37.9 Approval record for v1.4
+
+- Research consolidation: prepared as v1.4 review draft.
+- Project-owner approval of Bible 02: Pending.
+- Date approved: Pending.
+- Changes required before approval: complete and document the candidate-level originality audit; then submit the consolidated document for explicit owner review.
