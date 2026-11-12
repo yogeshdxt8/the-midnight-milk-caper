@@ -37,6 +37,8 @@ This log records durable project decisions. New decisions are appended; supersed
 
 | D-027 | Authorize implementation of The Kid's Glass greybox v0.7.3 under Responsive Rescue and Fair Intervention v1.0. | Approved (2026-11-12) | Owner explicitly accepted the recommendation to implement the approved interaction direction. Scope is limited to a low-fidelity greybox prototype and its validation: early-tap acknowledgement without queuing, rescue activation after visible slide travel and before the near-edge hesitation, immediate reach on accepted tap, Leo-only target, preserved near-edge hesitation, and existing fall/shatter. This does not authorize detailed art/assets, production implementation/integration, monetization, persistence or release. Greybox gate remains open pending Android/device evidence and explicit owner disposition. |
 
+| D-028 | Authorize greybox v0.8.0 implementation of bounded randomized slide speeds and edge-shudder effects for The Kid's Glass. | Approved (2026-11-12) | Owner explicitly requested these mechanics in a revised HTML greybox. Each attempt selects one bounded slide duration; timing remains fixed within that attempt. Subtle shudder builds during final approach and a brief multi-pulse shudder occurs during the near-edge hesitation. Effects are visual-only and do not alter Leo-only interaction, actionable rescue timing, rescue/failure thresholds, near-edge opportunity, fall or shatter. This authorizes only the v0.8.0 low-fidelity greybox and validation; it does not authorize detailed art/assets, production integration, monetization, persistence or release. |
+
 ## Decision record template
 
 For future entries, include:
