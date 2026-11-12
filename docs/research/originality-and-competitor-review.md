@@ -2,7 +2,7 @@
 
 **Project:** The Midnight Milk Caper  
 **Document status:** Research draft — YouTube Playables is the primary platform and competitor-evidence environment; not approved  
-**Version:** 0.9  
+**Version:** 1.0  
 **Research note:** This is a design-risk assessment, not legal advice or a clearance opinion. Competitor descriptions are based on linked store/publisher sources and secondary gameplay references where identified. Broad product descriptions do not prove every mechanic; direct playthrough review remains necessary. The scan is not exhaustive.
 
 ## 1. Purpose
@@ -246,10 +246,13 @@ Score each proposed level from 0 to 3 in each category:
 | Presentation | Recognizable copied composition/assets | Close visual arrangement | Clearly distinct visual treatment | Strong original composition and readable identity |
 | Platform clarity | Hard to understand/control on small touch screens | Significant friction | Readable with minor tuning | Immediately legible and comfortable on touch and mouse |
 
-**Interpretation rules:**
-- Any 0 in core interaction, objective/structure or presentation triggers mandatory redesign and a documented comparison against the closest reference.
+**Interpretation rules and mandatory gatekeeper rules:**
+- **Automatic rejection/redesign gate:** A score of **0 or 1 in either Player role or Core interaction** is an automatic **NO-GO**. The level must be rejected as proposed or redesigned before it may enter the production backlog. It cannot be rescued by a high aggregate score or by strong presentation.
+- After redesign, score the level again from evidence. Record what changed in the player role and/or core decision pattern. A waiver is not available for this gate.
+- Any 0 in Objective and structure or Presentation also triggers mandatory redesign and a documented comparison against the closest reference. A 1 in these categories requires explicit reviewer justification and a risk note before approval.
 - A high total score cannot compensate for a direct close match in one distinctive layer.
 - Review clusters of levels together: repeated interaction patterns across the catalogue can make a game derivative even when each level scores reasonably in isolation.
+- Record a short evidence note for every score, naming the closest reference and explaining the actual player decision—not merely the props or setting.
 - This rubric is an internal design gate, not a legal clearance test. No numerical score establishes legal originality.
 
 ## 15. Research quality and confidence
@@ -889,3 +892,33 @@ The player should remember a level because of the situation Leo gets into and th
 - Leo taxonomy: refined proposal v0.2 — pending project-owner review.
 - Candidate-level originality audit: not started.
 - Game Design Bible 02: research draft, not approved.
+
+
+## 33. First concrete originality stress-test case
+
+### Chapter 1, Level 1 — “The Dog's Bowl”
+
+The project owner has designated **Chapter 1, Level 1 (“The Dog's Bowl”)** as the first concrete test case for the originality framework and Leo's embodied interaction grammar.
+
+This designation establishes the first level concept to be developed and evaluated; it does **not** approve a finished mechanic, layout, puzzle solution, art treatment or production implementation.
+
+The level's purpose is to prove that the player's meaningful decision and Leo's embodied action are fundamentally distinct from Thief Puzzle's reach/route-to-target grammar. It must not simply substitute Leo's paw for the thief's hand, or substitute a bowl of food for a theft target.
+
+Before the concept can pass the originality gate, its design brief must explicitly define:
+- Leo's role in the situation and why his physical traits matter.
+- The player's primary decision and the input/action that expresses it.
+- The world-state change caused by Leo's action.
+- The dog's role in the puzzle, including whether the dog is an active social/behavioural participant or merely a static obstacle.
+- The objective and resolution, including a satisfying character payoff.
+- How the situation differs from a direct reach-route puzzle when props and setting are abstracted away.
+- The seven rubric scores, with evidence notes and the Player role/Core interaction gate applied.
+
+**First test-case acceptance condition:** Player role and Core interaction must each score at least 2; no automatic gate may be triggered; Leo-specificity must be at least 2; and the complete level must demonstrate a distinct decision pattern in a small, understandable YouTube Playables-friendly interaction.
+
+The exact mechanics and layout are the next design task, to be drafted only after this framework revision is recorded. Level 1 remains a concept-design test case, not an approved production level.
+
+### Status
+- Originality rubric v1.0: revised with mandatory Player role/Core interaction gatekeeper rule.
+- First stress-test case: Chapter 1, Level 1 — “The Dog's Bowl”.
+- Leo mechanic taxonomy: proposal v0.2, ready to be stress-tested through this case; not yet approved as a final mechanic specification.
+- Game Design Bible 02 v1.0: revised research/design framework; approval remains pending completion and review of the first test case.
