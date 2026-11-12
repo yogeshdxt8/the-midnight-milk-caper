@@ -1,8 +1,8 @@
 # Game Design Bible 01 — Product Vision
 
 **Project:** The Midnight Milk Caper  
-**Document status:** Proposed — audience, milk-motivation, level-duration, difficulty-progression, failure-model and progression directions approved; one product decision remains pending  
-**Version:** 0.7  
+**Document status:** Proposed — all seven product-vision decisions approved; complete vision awaiting formal document review and approval  
+**Version:** 0.8  
 **Authority:** Game Design Bible; subordinate to current official platform requirements
 
 ## 1. Product statement
@@ -109,7 +109,7 @@ Failure should be understandable, recoverable and proportionate. Avoid punitive 
 
 ## 10. Content scope
 
-The current planning target is 50 levels arranged as five chapters of ten levels each. This is a proposed production scope, not a promise that all 50 concepts are already designed or validated.
+The intended overall journey is planned around 50 levels arranged as five chapters of ten levels each. This is a planning target, not a fixed launch requirement or a promise that all 50 concepts are already designed or validated. All five chapters should be designed as the intended overall journey. A representative vertical slice must be built and validated before production scope is committed. Production effort, level quality, variety and feasibility should then be assessed; the launch level count may be adjusted if the evidence warrants it.
 
 The candidate chapter themes are:
 1. Home Adventures
@@ -220,7 +220,7 @@ This is a progression framework, not a promise that every level in a numerical b
 
 ## 18. Open decisions for approval
 
-1. **Scope:** Is 50 levels a fixed launch target or a planning target that can be adjusted after vertical-slice validation?
+No remaining product-vision decisions are awaiting an initial direction. The complete vision still requires formal document review and explicit approval.
 
 ## 19. Approval record
 
@@ -230,6 +230,8 @@ This is a progression framework, not a promise that every level in a numerical b
 - Difficulty progression: Approved — accessible early levels, mechanic combinations and observation in the middle, more challenging multi-step adventures later.
 - Failure model: Approved direction — unlimited retries, no lives/energy/waiting, quick restarts and contextual checkpoints where useful.
 - Progression: Approved — sequential level unlocks, chapter unlocks, replayable completed levels and no mandatory currency economy; optional achievements/cosmetics only if they add value.
-- Remaining product vision approval: Pending.
+- Launch scope: Approved planning approach — 50 levels across five chapters as the intended journey; validate a representative vertical slice before committing launch count; adjust scope based on quality, variety and production feasibility.
+- Product-vision decisions: All seven decision areas have approved directions.
+- Formal document approval: Pending review and explicit project-owner approval.
 - Date approved: Pending.
-- Changes required: Remaining open decisions above.
+- Changes required: Formal review and any requested revisions.
