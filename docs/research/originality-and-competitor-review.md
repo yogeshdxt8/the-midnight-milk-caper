@@ -2,7 +2,7 @@
 
 **Project:** The Midnight Milk Caper  
 **Document status:** Research draft — YouTube Playables is the primary platform and competitor-evidence environment; not approved  
-**Version:** 0.7  
+**Version:** 0.8  
 **Research note:** This is a design-risk assessment, not legal advice or a clearance opinion. Competitor descriptions are based on linked store/publisher sources and secondary gameplay references where identified. Broad product descriptions do not prove every mechanic; direct playthrough review remains necessary. The scan is not exhaustive.
 
 ## 1. Purpose
@@ -596,7 +596,7 @@ For Leo, route planning may appear as a small supporting decision in a level, bu
 
 ### Next step after this browser audit
 
-The remaining evidence gap is a controlled sample of the **YouTube Playables build**. The user has supplied a gameplay recording covering Levels 1–9; this is the first Playables evidence sample. The next research milestone is to annotate middle and later Playables levels, ideally around Levels 15–20 and 35–40, from the same build where possible. Record the source/build identity and annotate the exact supplied footage. Native mobile and Famobi browser builds remain secondary context only; do not silently merge their observations into the Playables sample.
+The remaining evidence gap is a controlled sample of the **YouTube Playables build**. The user has supplied a gameplay recording covering Levels 1–9; this is the first Playables evidence sample. The selected evidence scope for this research pass is Levels 1–20. Later Playables levels are intentionally excluded from the current sampling scope; this is a scope choice, not an outstanding user deliverable. Record the source/build identity and annotate the exact supplied footage. Native mobile and Famobi browser builds remain secondary context only; do not silently merge their observations into the Playables sample.
 
 ## 27. Approval record
 
@@ -615,7 +615,7 @@ YouTube Playables is the primary product, release target and reference environme
 
 - **Primary:** Thief Puzzle on YouTube Playables.
 - **Primary evidence supplied:** User-provided YouTube Playables gameplay recording covering Levels 1–9.
-- **Next evidence milestone:** Middle levels (approximately 15–20) and later levels (approximately 35–40), preferably from the same Playables build.
+- **Evidence scope:** Early and middle levels through Level 20. Levels 35–40 are intentionally excluded from this research pass.
 - **Secondary context only:** TapNation native mobile and Famobi-hosted browser versions. Their mechanics may provide useful context, but their level sequences, controls, physics and failure rules must not be assumed identical to Playables.
 
 ### 28.2 Initial supplied sample — Levels 1–9
@@ -643,7 +643,7 @@ The Famobi browser audit in Section 25 remains useful as a separately labelled s
 
 ### 28.4 Research gate
 
-Game Design Bible 02 remains a research draft and is not approved. The next milestone is the middle and later YouTube Playables samples. After those samples are annotated, refine the proposed Leo mechanic taxonomy against the observed interaction patterns. Only then begin the candidate-level originality audit.
+Game Design Bible 02 remains a research draft and is not approved. The early and middle YouTube Playables samples (Levels 1–20) have been received. The next work is to complete the interaction taxonomy from this bounded sample, refine the proposed Leo mechanic taxonomy, and then begin the candidate-level originality audit. No Levels 35–40 sample is required for this research pass.
 
 
 ## 29. YouTube Playables sample 2 — Levels 10–20
@@ -656,7 +656,7 @@ Game Design Bible 02 remains a research draft and is not approved. The next mile
 - **Evidence status:** Directly inspected video frames at multiple points across the recording. This is a visual sample, not yet a full input-by-input replay annotation.
 - **Build/version:** Not visible or otherwise confirmed in the supplied evidence.
 
-This sample extends the first Playables recording (Levels 1–9) and gives us a continuous early-to-middle progression sample through Level 20. It does not yet satisfy the later-game research milestone (approximately Levels 35–40).
+This sample extends the first Playables recording (Levels 1–9) and gives us a continuous early-to-middle progression sample through Level 20. Later-game sampling is intentionally outside the current research scope.
 
 ### 29.2 Preliminary level observations
 
@@ -693,9 +693,16 @@ Preliminary variation dimensions include open ground, water-side scenes, vertica
 
 - Early sample: Levels 1–9 — received.
 - Middle progression sample: Levels 10–20 — received.
-- Later sample: approximately Levels 35–40 — outstanding.
+- Later sample (Levels 35–40): intentionally excluded from this research pass; not an outstanding deliverable.
 - Detailed interaction taxonomy across all samples — in progress.
 - Leo mechanic taxonomy refinement — pending completion of the evidence comparison.
 - Candidate-level originality audit — not started.
 
 Game Design Bible 02 remains a research draft and is not approved.
+
+
+## 30. Evidence-scope decision — exclude Levels 35–40
+
+On 2026-11-12, the project owner explicitly chose to leave Levels 35–40 out of the current Thief Puzzle YouTube Playables research. The bounded primary evidence sample for this pass is therefore Levels 1–20 (recordings covering Levels 1–9 and 10–20).
+
+This is an intentional scope decision, not a pending request for footage. The analysis must state its limitation: it does not claim to characterize late-game progression or mechanics beyond Level 20. Continue with the interaction taxonomy and Leo originality work using the available Levels 1–20 evidence, and revisit later-level sampling only if a specific unresolved research question makes it necessary.
