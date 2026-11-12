@@ -14,7 +14,7 @@ This register is the index of authoritative project specifications and their app
 
 | Document / workstream | Location | Current status | Next action |
 |---|---|---|---|
-| Product Vision — Game Design Bible 01 | `docs/vision/game-identity.md` | Proposed v0.6; audience, milk motivation, duration, difficulty and failure-model directions approved | Resolve two remaining product decisions; then submit complete vision for approval. |
+| Product Vision — Game Design Bible 01 | `docs/vision/game-identity.md` | Proposed v0.7; audience, milk motivation, duration, difficulty, failure-model and progression directions approved | Resolve one remaining product decision; then submit complete vision for approval. |
 | Originality Research — Game Design Bible 02 | `docs/research/originality-and-competitor-review.md` | Research draft v0.1; initial scan, not approved | Deepen Thief Puzzle and casual-game evidence; compare all candidate levels. |
 | Character Bible — Leo | `docs/characters/leo-character-bible.md` | Approved direction; detailed spec in progress | Finalize identity and technical character specifications. |
 | World and location Bible | `docs/characters/` and `docs/levels/` | Not started | Define recurring locations and continuity rules. |
@@ -39,3 +39,4 @@ A document is not approved merely because it exists, has been generated, or has 
 - Recorded approved 1–3 minute initial level-duration targets in Game Design Bible 01 and Decision Log D-014.
 - Recorded approved difficulty progression framework in Game Design Bible 01 and Decision Log D-015.
 - Recorded approved unlimited-retry failure model in Game Design Bible 01 and Decision Log D-016.
+- Recorded approved level/chapter progression and replayability direction in Game Design Bible 01 and Decision Log D-017.
