@@ -1,8 +1,8 @@
 # Game Design Bible 01 — Product Vision
 
 **Project:** The Midnight Milk Caper  
-**Document status:** Proposed — audience, milk-motivation and level-duration directions approved; remaining product decisions pending  
-**Version:** 0.4  
+**Document status:** Proposed — audience, milk-motivation, level-duration and difficulty-progression directions approved; remaining product decisions pending  
+**Version:** 0.5  
 **Authority:** Game Design Bible; subordinate to current official platform requirements
 
 ## 1. Product statement
@@ -186,18 +186,27 @@ Unless separately approved, the product is not intended to become:
 - A collection of reskinned levels with identical solutions.
 - A timed speed-run experience in which all levels force players to finish within the duration targets.
 
-## 14. Open decisions for approval
+## 14. Difficulty progression
 
-1. **Difficulty:** Should the game start extremely accessible and build toward clever multi-step challenges without requiring precision timing as the dominant skill?
-2. **Failure model:** Should most levels allow immediate retries/checkpoints rather than limited lives?
-3. **Progression:** Should chapter/level completion be the primary progression system, with no currency economy unless a concrete design need is established?
-4. **Scope:** Is 50 levels a fixed launch target or a planning target that can be adjusted after vertical-slice validation?
+**Approved progression direction:**
+- **Early levels (1–10):** Very accessible. Teach movement and basic interactions naturally.
+- **Middle levels (11–30):** Introduce combinations of mechanics, observation and clever decisions.
+- **Later levels (31–50):** More challenging multi-step puzzles, unexpected situations and creative solutions.
+
+This is a progression framework, not a promise that every level in a numerical band has identical difficulty. Individual levels must still be playtested for clarity, fairness and pacing. Precision timing should not become the dominant measure of skill; it may appear when appropriate to a level's central idea.
+
+## 15. Open decisions for approval
+
+1. **Failure model:** Should most levels allow immediate retries/checkpoints rather than limited lives?
+2. **Progression:** Should chapter/level completion be the primary progression system, with no currency economy unless a concrete design need is established?
+3. **Scope:** Is 50 levels a fixed launch target or a planning target that can be adjusted after vertical-slice validation?
 
 ## 15. Approval record
 
 - Audience positioning: Approved — broad casual audience, 13+.
 - Milk motivation: Approved — signature motivation and emotional thread; not every level requires obtaining milk.
 - Level duration: Approved initial target — 1–3 minutes by complexity; no forced timer; validate through playtesting.
+- Difficulty progression: Approved — accessible early levels, mechanic combinations and observation in the middle, more challenging multi-step adventures later.
 - Remaining product vision approval: Pending.
 - Date approved: Pending.
 - Changes required: Remaining open decisions above.
