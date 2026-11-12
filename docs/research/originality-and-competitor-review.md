@@ -2,7 +2,7 @@
 
 **Project:** The Midnight Milk Caper  
 **Document status:** Research draft — YouTube Playables is the primary platform and competitor-evidence environment; not approved  
-**Version:** 0.6  
+**Version:** 0.7  
 **Research note:** This is a design-risk assessment, not legal advice or a clearance opinion. Competitor descriptions are based on linked store/publisher sources and secondary gameplay references where identified. Broad product descriptions do not prove every mechanic; direct playthrough review remains necessary. The scan is not exhaustive.
 
 ## 1. Purpose
@@ -644,3 +644,58 @@ The Famobi browser audit in Section 25 remains useful as a separately labelled s
 ### 28.4 Research gate
 
 Game Design Bible 02 remains a research draft and is not approved. The next milestone is the middle and later YouTube Playables samples. After those samples are annotated, refine the proposed Leo mechanic taxonomy against the observed interaction patterns. Only then begin the candidate-level originality audit.
+
+
+## 29. YouTube Playables sample 2 — Levels 10–20
+
+### 29.1 Source and coverage
+
+- **Source:** User-supplied screen recording identified by the user as YouTube Playables gameplay.
+- **Recording duration:** Approximately 3 minutes 30 seconds.
+- **Visible level coverage:** Levels 10 through 20.
+- **Evidence status:** Directly inspected video frames at multiple points across the recording. This is a visual sample, not yet a full input-by-input replay annotation.
+- **Build/version:** Not visible or otherwise confirmed in the supplied evidence.
+
+This sample extends the first Playables recording (Levels 1–9) and gives us a continuous early-to-middle progression sample through Level 20. It does not yet satisfy the later-game research milestone (approximately Levels 35–40).
+
+### 29.2 Preliminary level observations
+
+| Level | Visible scene / situation | Preliminary design observation |
+|---|---|---|
+| 10 | Outdoor poolside scene with two people, a grill/table area and a floating object in the water | Environmental layout and water-side access frame the puzzle; exact intended interaction requires closer confirmation |
+| 11 | Two-tier industrial/workshop-like scene with a person, a large circular saw and a small object on the upper level | Hazard-focused scene composition; visible danger is a prominent part of the challenge |
+| 12 | Outdoor waterside scene with two characters, a small structure/prop and an object near the water | Character placement and environmental props alter the scene; exact player decision requires confirmation |
+| 13 | Two-level walkway/bridge scene with characters, a lamp-like object and a block/target below | Vertical separation and access between levels are visually central |
+| 14 | Two-tier interior/urban scene with a fire hydrant and characters | Scene/character arrangement changes; footage should be reviewed more closely before assigning a mechanic label |
+| 15 | Two characters separated vertically, with matching orange block-like objects on either side | Symmetrical obstacle/object arrangement; appears to test interaction across a divided space |
+| 16 | Interior room with an upper balcony/railing, a character above, a character below and a door/object on the left | Vertical reach and character/object positioning; do not assume a new mechanic solely from the new setting |
+| 17 | Blue/icy scene with two characters, a central vertical ice formation and a vessel/object below | Environmental material/obstruction appears to shape access; exact cause-and-effect is not established from sampled frames |
+| 18 | Brown interior with a curtain and two characters at different heights | Vertical scene arrangement and an obscuring/covering prop; exact interaction needs closer inspection |
+| 19 | Graveyard scene with two characters, gravestones, a small plant/object and a door | Multi-object scene and character positioning; determine whether the puzzle changes the decision or mainly reuses established reach interaction |
+| 20 | Outdoor scene with a tall net/fence-like structure, characters/objects on both sides and a dog near a bowl or food item | Stronger multi-element scene composition; potential access/obstacle/social elements, but precise solution is not asserted from sampled frames |
+
+### 29.3 Cross-sample findings — Levels 1–20
+
+The combined supplied footage establishes a broader range of scene dressing and situation types. Across the first twenty visible levels, the game repeatedly presents compact, discrete scenes with a clear focal interaction and humorous character framing.
+
+Preliminary variation dimensions include open ground, water-side scenes, vertically separated areas, enclosed interiors and divided spaces; varied props and hazards; and different social arrangements. These are scene-level differences, not yet proof of distinct mechanics. A scene may look substantially different while still asking the player to perform the same core reach/route action. Classify each level by the decision and input it actually requires, not by props or setting.
+
+### 29.4 Evidence confidence and limits
+
+- The supplied recording visibly covers Levels 10–20: **High confidence**.
+- The visible scenes vary in layout, props and character arrangement: **High confidence**.
+- Exact player input and intended solution for every level: **Not fully established by sampled frames**.
+- Whether any level introduces a genuinely new core mechanic: **Not yet determined**.
+- Dated Playables build/version: **Unverified**.
+- Parity with native mobile or Famobi browser versions: **Not established and not assumed**.
+
+### 29.5 Updated research gate
+
+- Early sample: Levels 1–9 — received.
+- Middle progression sample: Levels 10–20 — received.
+- Later sample: approximately Levels 35–40 — outstanding.
+- Detailed interaction taxonomy across all samples — in progress.
+- Leo mechanic taxonomy refinement — pending completion of the evidence comparison.
+- Candidate-level originality audit — not started.
+
+Game Design Bible 02 remains a research draft and is not approved.
