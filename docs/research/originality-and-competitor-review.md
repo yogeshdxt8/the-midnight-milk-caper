@@ -1,9 +1,9 @@
 # Game Design Bible 02 — Originality and Competitive Research
 
 **Project:** The Midnight Milk Caper  
-**Document status:** Research draft — initial scan; not approved  
-**Version:** 0.1  
-**Research note:** This is a design-risk assessment, not legal advice or a clearance opinion. The scan is not exhaustive.
+**Document status:** Research draft — expanded competitor evidence and originality framework; not approved  
+**Version:** 0.2  
+**Research note:** This is a design-risk assessment, not legal advice or a clearance opinion. Competitor descriptions are based on linked store/publisher sources and secondary gameplay references where identified. Broad product descriptions do not prove every mechanic; direct playthrough review remains necessary. The scan is not exhaustive.
 
 ## 1. Purpose
 
@@ -46,7 +46,7 @@ Sources:
 
 **Differentiation opportunity:** Leo should be a fully embodied controllable character. Interaction should come from varied movement, positioning, object use, timing, environmental affordances and character-specific behaviour. The player should not simply extend a limb toward a target.
 
-**Research limitation:** A primary publisher/store listing was not captured in this initial source batch. The title's mechanics should be rechecked against current official listings and direct gameplay footage before the final similarity assessment.
+**Evidence:** TapNation's [Google Play listing](https://play.google.com/store/apps/details?id=com.weegoon.thiefpuzzle) and [Apple App Store listing](https://apps.apple.com/in/app/thief-puzzle-to-pass-a-level/id1549814091) describe short, humorous, swipe-controlled theft/brain-teaser levels and escalating challenges. The arm-extension/route-steering interaction is visible in gameplay and described by a third-party browser-game guide ([Thief Puzzle gameplay guide](https://thiefpuzzle.com/)); that guide is not the publisher and should be treated as secondary evidence. The precise current level catalogue and mechanic variants still require direct playthrough sampling.
 
 ### 3.3 Cut the Rope
 
@@ -172,3 +172,126 @@ The most defensible design direction is a focused collection of compact, varied,
 - Product owner approval: Pending
 - Date approved: Pending
 - Changes required: Pending
+
+
+## 11. Evidence-based competitor comparison
+
+This section separates what the sources explicitly describe from the design interpretation drawn for this project.
+
+| Reference | Player role | Repeated interaction / loop | Level or world structure | What Midnight Milk Caper must avoid reproducing |
+|---|---|---|---|---|
+| Thief Puzzle | A thief attempting to obtain a target object | Swipe/drag-controlled reach or arm-routing around obstacles and hazards; theft is the recurring objective | Discrete, compact brain-teaser scenes with escalating challenge | A fixed target + obstacle route + reach/grab solution repeated across levels; stretchy-arm visual language; theft as the default objective |
+| Untitled Goose Game | A disruptive goose acting in a shared village | Physical mischief, stealing, honking and provoking reactions from people | Connected village spaces and sandbox-style task/prank play | A task list of pranks, human-target disruption, stealth and theft as the central repeated loop |
+| Cut the Rope | Indirect controller guiding a candy payload to a fixed creature | Cut supports and manipulate physics/timing to deliver candy, optionally collecting stars | Discrete physics puzzles with a recurring core mechanic and added components | A waiting food-receiver mascot, repeated food-delivery objective, rope-cutting as core input, and similar trajectory/collectible structures |
+| Sneaky Sasquatch | A Sasquatch inhabiting and exploring a broad world | Sneaking, scavenging food, disguises, jobs, sports and many activities | Expansive open-world adventure with a large activity set | A hungry animal freely roaming human spaces, stealth/scavenging as signature behaviour, or a comparable open-world activity/economy structure |
+| Rube Works | An inventor solving everyday tasks | Connect objects and animals into elaborate cause-and-effect machines | Discrete contraption puzzles | Making elaborate chain-reaction construction the defining loop or reproducing recognizable Rube Goldberg machine sequences |
+
+Evidence links: [Thief Puzzle — Google Play](https://play.google.com/store/apps/details?id=com.weegoon.thiefpuzzle), [Thief Puzzle — App Store](https://apps.apple.com/in/app/thief-puzzle-to-pass-a-level/id1549814091), [Thief Puzzle — gameplay guide](https://thiefpuzzle.com/), [Untitled Goose Game — Steam](https://store.steampowered.com/app/837470/Untitled_Goose_Game/), [Cut the Rope — player guide](https://support.arkadium.com/support/solutions/articles/44002797498--cut-the-rope-how-to-play-tips-scoring), [Sneaky Sasquatch — App Store](https://apps.apple.com/in/app/sneaky-sasquatch/id1098342019), [Rube Works — Steam](https://store.steampowered.com/app/292090/Rube_Works_The_Official_Rube_Goldberg_Invention_Game/), [Rube Works — developer site](https://www.electriceggplant.com/rubeworks/index.html).
+
+### Interpretation
+
+The most important competitor risk is not that Leo is an animal, that he likes food, or that the game contains short puzzles. Those are broad ideas. Risk rises when several distinctive choices combine in the same way: the same player role, the same central action, the same objective, the same scene composition and the same comic payoff.
+
+The project should therefore evaluate *combinations* of design features rather than treating individual ingredients as automatically forbidden or automatically safe.
+
+## 12. Originality framework: the five-layer comparison
+
+Every proposed level and every major game-system proposal should be compared at five layers:
+
+1. **Fantasy and player role:** Who is the player acting as, and what are they trying to be in this situation?
+2. **Core verb and interaction grammar:** What does the player physically do, how is input expressed, and what decisions does it create?
+3. **Objective and level structure:** What constitutes success, what is the scene's structure, and how does the challenge unfold?
+4. **Character behaviour and payoff:** How do character traits, reactions and consequences create humour or emotion?
+5. **Presentation and composition:** How are the scene, silhouettes, camera, animation, sound and visual hierarchy composed?
+
+A proposal that differs only in protagonist, props, setting, colour or target object is not sufficiently differentiated. A proposal that changes several meaningful layers may have a stronger distinct identity, but still requires side-by-side review and playable testing.
+
+This is an internal creative-risk framework, not a legal test for infringement or clearance.
+
+## 13. Proposed Midnight Milk Caper design boundaries
+
+### 13.1 Positive identity to build
+
+- Leo is an embodied kitten controlled directly by the player in most levels.
+- The kitten's movement, scale, balance, curiosity, senses, paws and reactions should matter to the actual solution.
+- Levels are compact authored situations, not simply one repeated interaction presented with different scenery.
+- The central verb may change by situation: move, climb, balance, observe, wait, nudge, carry, hide, follow, investigate, help, navigate or interact. This is a candidate verb vocabulary, not a commitment that every verb must become a system.
+- Milk remains a recognizable emotional motif; it does not dictate every objective.
+- Comedy should emerge from what the player makes Leo do and how the world responds.
+- Reusable systems are encouraged, but their combinations and level decisions should create distinct experiences.
+
+### 13.2 Negative boundaries
+
+Do not make the following the game's signature loop:
+- Extending a stretchy arm or limb along a route to steal a target.
+- Repeatedly stealing objects from people while avoiding guards, traps or detection.
+- Repeatedly cutting ropes or manipulating a payload to feed a waiting character.
+- Repeatedly building elaborate Rube Goldberg machines to complete ordinary tasks.
+- Roaming a large human world as a hungry animal whose main activities are scavenging, disguising and evading people.
+- Reusing a recognizable competitor level layout, character silhouette, animation, gag, UI composition, sound identity or branded visual element.
+
+These boundaries do not prohibit every isolated use of a familiar genre convention. They prohibit building the product identity around a close recreation of a competitor's distinctive combination.
+
+## 14. Level concept originality review — revised rubric
+
+Score each proposed level from 0 to 3 in each category:
+
+| Criterion | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|
+| Player role | Essentially the same role as a close reference | Cosmetic variation | Meaningfully different role in this situation | Distinct role that strongly expresses Leo's identity |
+| Core interaction | Recreates a recognizable interaction | Minor input/prop variation | Different decision/action pattern | Fresh interaction pattern with clear player agency |
+| Objective and structure | Same objective and scene logic | Mostly same structure with a new target | Different objective or progression | Distinct setup, challenge and resolution |
+| Leo-specificity | Leo could be replaced without changing the puzzle | Cat is mostly cosmetic | Cat traits affect the solution | Leo's body/personality are essential to the solution |
+| Character payoff | Recreates a recognizable gag | Generic reaction | Situation-specific reaction | Memorable payoff caused by the player's action |
+| Presentation | Recognizable copied composition/assets | Close visual arrangement | Clearly distinct visual treatment | Strong original composition and readable identity |
+| Platform clarity | Hard to understand/control on small touch screens | Significant friction | Readable with minor tuning | Immediately legible and comfortable on touch and mouse |
+
+**Interpretation rules:**
+- Any 0 in core interaction, objective/structure or presentation triggers mandatory redesign and a documented comparison against the closest reference.
+- A high total score cannot compensate for a direct close match in one distinctive layer.
+- Review clusters of levels together: repeated interaction patterns across the catalogue can make a game derivative even when each level scores reasonably in isolation.
+- This rubric is an internal design gate, not a legal clearance test. No numerical score establishes legal originality.
+
+## 15. Research quality and confidence
+
+| Evidence type | What it can establish | Limitation |
+|---|---|---|
+| Official store/publisher descriptions | Declared product premise, broad features, platform and positioning | Marketing copy may omit or simplify actual gameplay |
+| Official developer gameplay/trailers | Visual presentation and visible interaction examples | Short clips may be curated and unrepresentative |
+| Direct gameplay sampling | Actual control, objective, level structure, feedback and repetition | Requires a documented sample and consistent observation method |
+| Independent reviews/analysis | Player-facing interpretation, pacing and criticism | May be subjective or based on a particular version |
+| Academic design research | Useful vocabulary and design frameworks | Does not establish similarity or commercial performance of this specific project |
+
+Current evidence is sufficient for an initial competitor risk map, not a complete mechanic-by-mechanic audit. Thief Puzzle's publisher listings confirm its short humorous swipe-controlled theft-puzzle positioning; the precise arm-routing interaction is supported here by secondary gameplay material and must be validated by direct gameplay capture.
+
+## 16. Required next research tasks
+
+1. Directly sample a representative set of Thief Puzzle levels, recording objective, input, obstacle logic, failure, feedback and level variation. Do not rely only on store copy.
+2. Sample representative levels from Cut the Rope and compare how its core mechanic evolves without losing the repeated delivery loop.
+3. Review representative Untitled Goose Game and Sneaky Sasquatch gameplay to distinguish their shared animal-mischief theme from their different sandbox/activity structures.
+4. Review Rube Works examples to map when chain reactions are the central decision rather than merely an incidental effect.
+5. Build a mechanic taxonomy for The Midnight Milk Caper before generating a complete level catalogue.
+6. Audit every candidate level against the five-layer comparison and revised rubric.
+7. Conduct a catalogue-level repetition audit, not only isolated level reviews.
+8. Before commercial release, obtain qualified IP/legal review if a proposed character, level, mechanic presentation, animation, sound or marketing element creates a close similarity concern.
+
+## 17. Current research conclusion — v0.2
+
+The project has a promising *direction* for differentiation, but it has not yet demonstrated originality through a playable game or a complete level catalogue.
+
+The strongest current distinction is the combination of:
+- an embodied, directly controlled kitten;
+- compact authored adventures rather than a large prank sandbox;
+- varied situation-specific interaction and objectives;
+- character comedy generated by player action;
+- milk as a recurring identity motif rather than a repeated delivery/stealing mechanic.
+
+The next design work must prove these claims through a mechanic taxonomy and a catalogue of genuinely different level concepts. A cat protagonist, a milk theme, a midnight palette and short levels are not, by themselves, evidence of originality.
+
+## 18. Approval record
+
+- Research owner review: In progress
+- Product owner approval: Pending
+- Date approved: Pending
+- Version reviewed: 0.2
+- Changes required: Complete direct gameplay sampling and mechanic taxonomy; then audit candidate level concepts before requesting approval.
