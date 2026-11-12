@@ -15,7 +15,7 @@ This register is the index of authoritative project specifications and their app
 | Document / workstream | Location | Current status | Next action |
 |---|---|---|---|
 | Product Vision — Game Design Bible 01 | `docs/vision/game-identity.md` | **Approved v0.9** | Proceed to Game Design Bible 02 — Originality Research; retain normal change control for future revisions. |
-| Originality Research — Game Design Bible 02 | `docs/research/originality-and-competitor-review.md` | Research draft v0.7; YouTube Playables primary; Levels 1–9 and 10–20 recordings received; not approved | Obtain and annotate later Playables sample (approximately Levels 35–40); complete cross-sample interaction taxonomy; refine Leo's mechanic taxonomy; then audit candidate level concepts. Native mobile and Famobi browser builds are secondary context only. |
+| Originality Research — Game Design Bible 02 | `docs/research/originality-and-competitor-review.md` | Research draft v0.8; YouTube Playables primary; Levels 1–9 and 10–20 recordings received; not approved | Complete interaction taxonomy from the bounded Levels 1–20 sample; refine Leo's mechanic taxonomy; then audit candidate level concepts. Levels 35–40 are intentionally excluded from this research pass. |
 | Character Bible — Leo | `docs/characters/leo-character-bible.md` | Approved direction; detailed spec in progress | Finalize identity and technical character specifications. |
 | World and location Bible | `docs/characters/` and `docs/levels/` | Not started | Define recurring locations and continuity rules. |
 | Gameplay and interaction systems | `docs/game-design/` | Not started | Define controls, interaction taxonomy and reusable systems. |
@@ -51,3 +51,4 @@ A document is not approved merely because it exists, has been generated, or has 
 - Expanded Game Design Bible 02 to v0.6 to correct the evidence hierarchy and next research milestone. Bible 02 remains a draft pending middle/later Playables sampling and originality analysis.
 
 - Expanded Game Design Bible 02 to v0.7 with a preliminary visual annotation of the user-supplied YouTube Playables Levels 10–20 recording. Levels 1–20 are now represented in primary Playables evidence; later-level sampling and detailed interaction classification remain outstanding. Bible 02 remains unapproved.
+- 2026-11-12: Project owner explicitly excluded Thief Puzzle Levels 35–40 from the current research scope. Game Design Bible 02 v0.8 records Levels 1–20 as the bounded evidence sample; late-game conclusions are not claimed.\n
