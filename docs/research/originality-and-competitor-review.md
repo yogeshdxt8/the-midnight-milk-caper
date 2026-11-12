@@ -2,7 +2,7 @@
 
 **Project:** The Midnight Milk Caper  
 **Document status:** Research draft — YouTube Playables is the primary platform and competitor-evidence environment; not approved  
-**Version:** 0.8  
+**Version:** 0.9  
 **Research note:** This is a design-risk assessment, not legal advice or a clearance opinion. Competitor descriptions are based on linked store/publisher sources and secondary gameplay references where identified. Broad product descriptions do not prove every mechanic; direct playthrough review remains necessary. The scan is not exhaustive.
 
 ## 1. Purpose
@@ -706,3 +706,186 @@ Game Design Bible 02 remains a research draft and is not approved.
 On 2026-11-12, the project owner explicitly chose to leave Levels 35–40 out of the current Thief Puzzle YouTube Playables research. The bounded primary evidence sample for this pass is therefore Levels 1–20 (recordings covering Levels 1–9 and 10–20).
 
 This is an intentional scope decision, not a pending request for footage. The analysis must state its limitation: it does not claim to characterize late-game progression or mechanics beyond Level 20. Continue with the interaction taxonomy and Leo originality work using the available Levels 1–20 evidence, and revisit later-level sampling only if a specific unresolved research question makes it necessary.
+
+
+## 31. Interaction taxonomy — Thief Puzzle YouTube Playables, Levels 1–20
+
+### 31.1 Evidence basis and confidence
+
+This taxonomy synthesizes the two user-supplied YouTube Playables recordings: Levels 1–9 and Levels 10–20. The recordings show the Playables presentation and level outcomes. The sample is bounded to the first twenty levels; it does not support conclusions about later progression.
+
+The footage repeatedly shows a player-controlled hand/arm reaching from the thief toward a target, with a visible route/trajectory across the scene. Scene compositions and target types change substantially. The sample supports a high-confidence conclusion that the dominant interaction grammar remains reach/route-to-target. It does **not** support treating every new prop, hazard, character arrangement or background as a separate core mechanic.
+
+The recordings do not expose a confirmed build identifier. Precise input-device semantics (touch gesture versus mouse gesture) and all underlying collision/physics rules should be validated in a live Playables session before being treated as implementation facts.
+
+### 31.2 Primary interaction grammar
+
+**Read scene → identify target → infer a hand/arm route → extend/steer the reach through the scene → avoid obstructing or dangerous elements → contact target → receive success/failure feedback → retry or advance.**
+
+The central player decision is how to route the reaching limb to the target in the particular scene. The hand endpoint matters, but the route through the scene also matters. The level is therefore primarily a spatial path/reach puzzle, framed as a theft or retrieval scenario.
+
+### 31.3 Reusable challenge dimensions observed across the sample
+
+| Dimension | What changes between levels | Effect on the same core decision |
+|---|---|---|
+| Target identity and placement | Bags, briefcase-like objects, food/objects, beach items and other scene targets | Changes where the reach must terminate and the story context |
+| Route topology | Open straight paths, paths around furniture/props, vertical separation, divided spaces and narrow access | Changes the geometry of the reach |
+| Static obstruction | Furniture, railings, barriers, props, curtains, ice-like structures, gravestones and net/fence-like structures | Requires a different route through the scene |
+| Hazard exposure | People and visible dangerous machinery such as the circular saw | Adds collision/detection risk to the reach |
+| Social arrangement | One person, multiple people, people at different heights, pairs/couples, or a dog near a food/object setup | Changes the scene's risk and comic framing |
+| Environmental context | Home/interior, public/outdoor, pool/water-side, workshop, icy scene, graveyard | Reframes the same action with different props and narrative |
+| Verticality | Targets or characters above/below the thief; balconies, platforms and split-level scenes | Changes reach angle and path geometry |
+| Timing/state | Some scenes may invite timing around characters or hazards; the supplied visual sample alone does not establish a distinct timing system | Potentially changes when the route is attempted, but must not be promoted to a separate mechanic without interaction evidence |
+| Outcome framing | Oops/failure screens, success cards, celebratory feedback and retries | Makes consequences legible and supports rapid retry |
+
+### 31.4 Level-by-level evidence classification
+
+The following classification deliberately separates visible scene changes from proven mechanic changes.
+
+| Levels | Visible situation family | Primary classification | Evidence interpretation |
+|---|---|---|---|
+| 1 | Briefcase in a simple split-level scene | Basic reach tutorial | Establishes target-directed reaching with a relatively direct route |
+| 2 | Handbag in a furnished room with seated characters | Reach through a social/furnished scene | Adds route constraints and nearby characters; same reach grammar |
+| 3 | Outdoor scene with people, hydrant and a low target/object | Reach amid people and street props | Different scene topology; not proven to be a new core verb |
+| 4 | Outdoor landmark scene with balloon, people and carried objects | Reach in a comic public scene | Failure/retry is visible; target and character arrangement vary |
+| 5 | Museum/statue-like interior with people and an object near the floor | Reach in a constrained public interior | New context and object placement; same dominant interaction |
+| 6 | Beach scene with several objects and a waterline | Reach among multiple environmental objects | Adds a denser object field; exact target-selection rules need caution |
+| 7 | Doorway separating two characters | Reach across a social/doorway setup | Social composition and separation change; no confirmed new mechanic |
+| 8 | Couple on a bench with hydrant/water feature and a nearby character | Reach in a character-led comic setup | Outcome and gag are scene-specific; core interaction remains target reach |
+| 9 | Indoor/wooden floor scene with pumpkins and several objects | Reach in a multi-object scene | More competing visual elements; does not by itself prove a different action |
+| 10 | Poolside scene with people, grill/table and floating object | Reach in a water-side scene | Environmental context and target location vary |
+| 11 | Workshop/industrial scene with a circular saw and person | Hazard-constrained reach | Machinery is a visible danger; hazard changes route risk, not necessarily the core mechanic |
+| 12 | Waterside scene with characters and an object near the water | Reach across a waterside/social arrangement | New spatial arrangement; exact action semantics remain less certain |
+| 13 | Split-level walkway/bridge with characters and objects at different heights | Vertical reach | Height and platform geometry change route planning |
+| 14 | Two-tier interior/urban scene with characters and street props | Reach through a vertically divided scene | Scene composition changes; no independent mechanic established |
+| 15 | Two characters separated by a horizontal orange barrier/connector | Reach across a divided space | Barrier topology changes the route; likely a variant of reach routing |
+| 16 | Interior room with balcony/railing, upper and lower characters, door/furniture | Reach across multiple elevations | Verticality and furniture/railing constrain access |
+| 17 | Icy scene with a central ice formation and characters on either side | Reach around/through a prominent environmental obstruction | Obstruction changes path geometry; footage does not establish a standalone ice mechanic |
+| 18 | Interior scene with a curtain and characters at different heights | Reach in a partially obscured/partitioned space | Curtain and vertical arrangement vary the route; exact collision behaviour unconfirmed |
+| 19 | Graveyard/garden scene with gravestones, plant/object and characters | Reach through a multi-prop outdoor scene | Props and social framing vary; core reach decision appears retained |
+| 20 | Outdoor scene with a tall net/fence-like divider and a dog near a bowl/object | Reach in a divided scene with an animal/social hazard context | Adds an animal and strong barrier composition; not enough evidence to call animal interaction a new core mechanic |
+
+### 31.5 What is genuinely variable versus what remains invariant
+
+**Genuine variation in the sample:**
+- Scene topology and reach geometry.
+- Target placement and target identity.
+- Static obstruction and hazard arrangement.
+- Number, position and type of scene characters.
+- Environmental storytelling and comic payoff.
+- Vertical separation and divided spaces.
+- Failure/success framing and retry feedback.
+
+**Invariant dominant loop:**
+- A target is presented in a compact scene.
+- The player directs the thief's reaching hand/arm toward it.
+- The path/route and intervening scene elements determine whether the target can be reached safely.
+- Success is generally framed as obtaining the target; failure leads to retry.
+
+The evidence therefore supports **one dominant mechanic family with many challenge modifiers**, not twenty unrelated mechanics. A few scenes may contain additional contextual interactions, but the current sample does not establish a separate, reusable secondary control system.
+
+### 31.6 Competitor design lessons to retain
+
+Learn from:
+- A single obvious focal objective.
+- Compact scene composition and quick level framing.
+- Legible spatial constraints.
+- A simple, expressive primary gesture.
+- Immediate success/failure feedback and quick retries.
+- Humorous context that makes the target and situation memorable.
+
+Do not reproduce:
+- A universal extendable-arm/hand route as the player's main verb.
+- Theft/retrieval as the repeated objective structure.
+- A level catalogue whose novelty is primarily target swaps and obstacle rearrangements around the same reach route.
+- Recognizable scene compositions, target arrangements, character gags or visual presentation.
+
+---
+
+## 32. Refined Leo mechanic taxonomy — proposal v0.2
+
+### 32.1 Design objective
+
+The competitor sample exposes a specific originality risk: if Leo's game repeatedly asks the player to trace a route from a character to a target, changing the arm into a paw, milk into another object, or the background into a kitchen would not create a sufficiently distinct interaction identity.
+
+Leo's taxonomy must therefore be organized around **different player decisions made through an embodied kitten**, not a long list of animations or prop interactions.
+
+The taxonomy below is a refined proposal. It is not yet a production-approved feature list.
+
+### 32.2 Core mechanic families
+
+| Family | Player-facing decision | Candidate verbs/actions | Kitten-specific value |
+|---|---|---|---|
+| A. Locomotion and body control | Where and how should Leo move? | Walk, run, stop, turn, jump, land, climb, descend, balance, squeeze, crouch, pounce | Small body, agility, balance, paws and feline movement create the challenge |
+| B. Perception and investigation | What should Leo notice or understand before acting? | Look, inspect, listen, sniff/follow scent, track movement, observe a pattern | Whiskers, ears, nose, curiosity and attention make observation character-specific |
+| C. Paw and object interaction | Which object should Leo affect, and how? | Tap, bat, nudge, push, pull, scratch, press, hold, paw at, pick up/carry where appropriate | Paw reach, claws, paw pads and playful batting create expressive object contact without a stretchy limb |
+| D. Balance and physical control | How can Leo maintain or change a physical state? | Balance on narrow surfaces, shift weight, cling, brace, recover, control a landing | Feline balance and body posture become meaningful player decisions |
+| E. Hide, fit and navigate | Where can Leo pass, wait or remain unseen? | Hide, squeeze through, slip under/behind, perch, wait in cover | Kitten scale and flexible body shape alter spatial affordances; avoid making stealth the default loop |
+| F. Social and animal interaction | How should Leo approach or respond to another character? | Approach, retreat, wait, play, reassure, distract in a context-specific way, follow, cooperate | Cat body language, curiosity, trust, playfulness and reactions create social decisions |
+| G. Timing and commitment | When should Leo act, pause or abort? | Wait for a safe opening, follow a rhythm, time a jump, commit/abort, react to a moving object | Timing is grounded in Leo's movement and scene state, not a universal precision-timing requirement |
+| H. Environmental cause-and-effect | Which physical change should Leo cause or exploit? | Tip, roll, displace, release, trigger, use a foothold, make a sound, create a route through an object interaction | Leo's weight, paws, curiosity and contact with the environment drive the chain; keep sequences short and situation-specific |
+
+### 32.3 Taxonomy hierarchy: not every verb is a separate mechanic
+
+The eight families are conceptual buckets, not eight mandatory control systems. A production mechanic should be approved only when it has:
+1. A distinct player decision.
+2. A clear input and feedback model.
+3. A legible success/failure condition.
+4. A meaningful reason to use Leo rather than a generic avatar.
+5. More than one useful level application without becoming a reskin.
+6. A distinct contribution to the overall game rather than a new animation for an existing action.
+
+For example, tap, bat and nudge may share one paw-contact system if they create the same decision and differ only in animation/force tuning. Conversely, balancing and investigating should remain distinct if they require different player judgments and feedback.
+
+### 32.4 Proposed core versus supporting systems
+
+**Candidate core families for prototyping after the design gate:**
+- Locomotion and body control.
+- Paw and object interaction.
+- Perception and investigation.
+- Balance and physical control.
+
+**Candidate supporting families, used when a level needs them:**
+- Hide, fit and navigate.
+- Social and animal interaction.
+- Timing and commitment.
+- Environmental cause-and-effect.
+
+This is a hypothesis for a compact initial mechanic vocabulary, not a final implementation commitment. The vertical slice should test whether the candidate core families produce distinct decisions and whether the supporting families can be expressed without adding control complexity.
+
+### 32.5 Interaction patterns to avoid as the game's default
+
+- Draw/drag a continuous limb path from Leo to a distant target.
+- Reach around obstacles to retrieve a target as the repeated level objective.
+- Make every level about stealing food or avoiding detection.
+- Replace the thief's hand with a cat paw while preserving the same reach-route puzzle.
+- Use detached object manipulation so extensively that Leo becomes a decorative spectator.
+- Introduce many one-off gestures that cannot be reused or understood consistently.
+
+### 32.6 Level-design test: situation over prop variation
+
+For every candidate level, record:
+- Dominant mechanic family and supporting families.
+- Player's main question/decision.
+- The action/input that expresses that decision.
+- What changes in the world as a result.
+- Why Leo's body or personality matters.
+- How the level differs from the closest previous level.
+- Whether replacing the props would leave the same decision and solution intact.
+
+If replacing the props leaves the same decision and solution, the level is likely a variation rather than a new situation and should be reconsidered.
+
+### 32.7 Revised originality principle
+
+**Reuse a small vocabulary of embodied kitten abilities; vary the decisions, relationships and consequences.**
+
+The player should remember a level because of the situation Leo gets into and the choice they make—not because the same reach mechanic is pointed at a different object.
+
+### 32.8 Status and next gate
+
+- Thief Puzzle Playables sample: Levels 1–20 — received and classified at the interaction-family level.
+- Dominant competitor interaction grammar: reach/route-to-target with challenge modifiers — high confidence within the supplied sample.
+- Detailed per-level input and collision semantics: partially unverified; do not overstate.
+- Leo taxonomy: refined proposal v0.2 — pending project-owner review.
+- Candidate-level originality audit: not started.
+- Game Design Bible 02: research draft, not approved.
