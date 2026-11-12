@@ -15,7 +15,7 @@ This register is the index of authoritative project specifications and their app
 | Document / workstream | Location | Current status | Next action |
 |---|---|---|---|
 | Product Vision — Game Design Bible 01 | `docs/vision/game-identity.md` | **Approved v0.9** | Proceed to Game Design Bible 02 — Originality Research; retain normal change control for future revisions. |
-| Originality Research — Game Design Bible 02 | `docs/research/originality-and-competitor-review.md` | Research draft v0.5; browser-build interaction audit, confidence register and proposed Leo mechanic taxonomy; not approved | Complete version-identified hands-on sampling of the current TapNation mobile app (or formally select a specific Famobi browser build as the reference); refine taxonomy; then audit candidate level concepts. |
+| Originality Research — Game Design Bible 02 | `docs/research/originality-and-competitor-review.md` | Research draft v0.6; YouTube Playables is the primary platform and evidence environment; Levels 1–9 recording received; not approved | Annotate middle and later YouTube Playables samples; refine Leo's mechanic taxonomy; then audit candidate level concepts. Native mobile and Famobi browser builds are secondary context only. |
 | Character Bible — Leo | `docs/characters/leo-character-bible.md` | Approved direction; detailed spec in progress | Finalize identity and technical character specifications. |
 | World and location Bible | `docs/characters/` and `docs/levels/` | Not started | Define recurring locations and continuity rules. |
 | Gameplay and interaction systems | `docs/game-design/` | Not started | Define controls, interaction taxonomy and reusable systems. |
@@ -47,4 +47,6 @@ A document is not approved merely because it exists, has been generated, or has 
 - Expanded Game Design Bible 02 to v0.3 with a documented Thief Puzzle early-level sample (levels 1–5), interaction-variation analysis, a proposed Leo mechanic taxonomy and explicit evidence limitations. Direct version-identified gameplay annotation remains outstanding; the document remains unapproved.
 - Expanded Game Design Bible 02 to v0.4 to record the approved design direction: reuse a small vocabulary of kitten abilities to create varied situations, rather than repeat one signature mechanic across the level catalogue.
 - Expanded Game Design Bible 02 to v0.5 with a source-identified Famobi browser-build interaction audit, scene variation analysis and confidence register. Native TapNation app parity and hands-on mobile sampling remain unverified; the document remains unapproved.
+- 2026-11-12: Project owner confirmed YouTube Playables as the primary product/release target and primary Thief Puzzle research environment. The supplied Levels 1–9 recording is the first Playables evidence sample; middle and later Playables samples are the next milestone. Native mobile and Famobi browser builds are secondary context only.
+- Expanded Game Design Bible 02 to v0.6 to correct the evidence hierarchy and next research milestone. Bible 02 remains a draft pending middle/later Playables sampling and originality analysis.
 
