@@ -2,7 +2,7 @@
 
 **Project:** The Midnight Milk Caper  
 **Document status:** Research draft — YouTube Playables is the primary platform and competitor-evidence environment; not approved  
-**Version:** 1.0  
+**Version:** 1.1  
 **Research note:** This is a design-risk assessment, not legal advice or a clearance opinion. Competitor descriptions are based on linked store/publisher sources and secondary gameplay references where identified. Broad product descriptions do not prove every mechanic; direct playthrough review remains necessary. The scan is not exhaustive.
 
 ## 1. Purpose
@@ -922,3 +922,193 @@ The exact mechanics and layout are the next design task, to be drafted only afte
 - First stress-test case: Chapter 1, Level 1 — “The Dog's Bowl”.
 - Leo mechanic taxonomy: proposal v0.2, ready to be stress-tested through this case; not yet approved as a final mechanic specification.
 - Game Design Bible 02 v1.0: revised research/design framework; approval remains pending completion and review of the first test case.
+
+
+## 34. Chapter 1, Level 1 — “The Dog's Bowl” (complete level design proposal)
+
+**Status: Concept proposal — not approved for production.** The project owner selected the Paw-rock-the-bowl direction. This section specifies a testable level concept, its interaction contract, puzzle logic, layout, feedback and provisional originality score. The score is a design assessment, not a substitute for playtesting or legal review.
+
+### 34.1 Level intent and player decision
+
+**Player-facing problem:** The dog's food bowl is upside down, so the dog cannot eat.
+
+**Player role:** Leo is a curious helper who notices the problem and uses a paw to right the bowl.
+
+**Primary player decision:** Where should Leo push the curved side/rim of the overturned bowl so that it rocks over into its upright position?
+
+**Why this is not a reach-route puzzle:** The player does not trace a path from Leo to a distant target. The player selects a local point of physical contact on an object next to Leo. The decision concerns contact placement and the resulting rotation/state change—not pathfinding a hand around obstacles to retrieve an object.
+
+**Intended emotional beat:** The dog communicates the problem through its gaze and body language; Leo investigates and helps; the dog can finally eat and responds happily.
+
+### 34.2 Exact player input and interaction contract
+
+**Primary input (touch and mouse parity):**
+- The player taps/clicks one of the bowl's two broad, readable side-contact zones.
+- The valid hit area is generously sized and visually aligned to the bowl's exposed curved wall/rim. It must be usable on a small phone screen.
+- A valid selection makes Leo step/lean into the selected side and perform one short paw push.
+- The push is a discrete action. The player does not drag, draw, steer or continuously control Leo's paw.
+- During the push and bowl response, further input is briefly ignored to prevent accidental repeated impulses.
+- If the player taps outside the bowl's valid interaction area, Leo gives a small curious glance or idle response; no state changes.
+
+**Control model:** One tap/click = one committed paw push. No joystick, virtual buttons, swipe path or precision hold is required.
+
+**Contact-side choice:** The overturned bowl is authored in a visibly off-centre, slightly tilted resting pose. Its silhouette and floor contact make the more effective side legible. The first attempt should reward observation, not pixel hunting. Both zones remain valid input targets; the less effective side produces a harmless partial rock and settles back, while the intended side tips the bowl through its stable transition into the upright state. Do not use an invisible single-pixel hotspot.
+
+**Animation/physics implementation guidance:** Use a deterministic authored rocking/rotation sequence or tightly constrained rigid-body simulation with a stable final pose. The level must not depend on unpredictable real-time physics. Bowl rotation, collision and final placement must be repeatable across devices and frame rates.
+
+### 34.3 Puzzle state machine
+
+| State | World state | Player opportunity | Transition |
+|---|---|---|---|
+| S0 — Problem presented | Bowl inverted and slightly tilted; dog waits | Inspect scene and choose a side | Valid tap selects contact side |
+| S1 — Leo commits | Leo approaches/leans and performs paw push | No new input during action | Push animation completes |
+| S2a — Partial rock | Bowl rocks but settles inverted after a weak-side push | Player can reassess and try again | Return to S0 with bowl in a clear stable pose |
+| S2b — Successful tip | Bowl passes its balance point and rotates | No input during resolution | Bowl reaches upright pose |
+| S3 — Bowl ready | Bowl upright and stable; food is accessible | No further puzzle input needed | Dog approaches |
+| S4 — Payoff | Dog eats; Leo reacts | Level complete | Success transition |
+
+**Deterministic outcome rules:**
+- The effective side is established by the authored tilt and visible geometry. The intended contact direction produces enough rotational impulse to carry the bowl past its balance point.
+- The ineffective side produces a small, readable movement but not a dangerous or confusing bounce.
+- After a failed attempt, restore the bowl to a stable, slightly adjusted pose that still communicates the intended contact side. Do not accumulate arbitrary physics drift.
+- The successful transition must be reliable on the first correct input and must not require repeated tapping or timing precision.
+- No dog collision, food theft, hazard, timer, lives or random outcome is part of this level.
+
+**Important design check:** If playtests show that the effective side is not visually inferable, revise the bowl's authored tilt, contact geometry or tutorial cue. Do not solve poor readability by shrinking the hit target or adding unexplained trial-and-error.
+
+### 34.4 Layout and camera specification
+
+**Composition:** A compact, single-screen backyard/patio vignette. Leo, the bowl and the dog form a clear visual triangle. The bowl is the focal interaction object and occupies enough screen area for reliable tapping.
+
+**Spatial arrangement:**
+- Leo stands close enough to touch the bowl with one short step or lean; no traversal sequence is needed.
+- The inverted bowl sits in the central foreground, unobstructed.
+- The dog sits or crouches just behind and to one side of the bowl, looking between the bowl and Leo.
+- Food is visible only as a small contextual clue near the bowl or inside the inaccessible bowl area; it must not become a second target.
+- Background props are sparse and remain outside the interaction focus. No fences, furniture maze, narrow gaps or hazards.
+
+**Camera:**
+- Fixed three-quarter view with a slightly elevated angle so players can read the bowl's inverted opening, curved wall and floor contact.
+- Keep Leo's paw, bowl and dog's face visible simultaneously.
+- No camera pan, zoom or perspective change during the puzzle.
+- Responsive framing must preserve hit-area size and the visual distinction between the two contact sides in both portrait and landscape layouts.
+
+**Visual readability:**
+- Strong silhouette contrast between bowl and ground.
+- A clear rim/opening edge so the inverted state is unmistakable.
+- The bowl's slight lean is visible without a text prompt.
+- Avoid clutter, decorative highlights that resemble interactive targets, or tiny directional symbols.
+
+### 34.5 Tutorial and onboarding
+
+Use a short, diegetic visual tutorial:
+1. Dog looks at the inverted bowl, then gives Leo a hopeful glance.
+2. Leo looks at the bowl and leans forward.
+3. A brief paw/contact anticipation animation suggests that the bowl can be pushed.
+4. If needed, a single subtle pulse on the broad bowl interaction region may appear after a short idle period.
+
+No written instruction is required for the first attempt. If playtests show the action is not discoverable, add a concise prompt such as “Tap the bowl to nudge it” and test again. Do not initially show a drawn trajectory or arrow that makes the level resemble a route puzzle.
+
+### 34.6 Feedback, failure and success
+
+**Input feedback:**
+- On valid selection, show a small contact squash/impact cue, paw movement and a soft bowl sound.
+- The bowl should visibly respond immediately after the paw makes contact.
+- The bowl's movement must communicate the causal result of the selected side.
+
+**Ineffective push:**
+- Short, gentle rocking motion; soft hollow bowl sound.
+- Bowl settles safely in a stable inverted pose.
+- Leo briefly looks at the bowl or repositions his paw.
+- Dog remains patient; no alarm, anger or punishment.
+- Player can retry immediately.
+
+**Successful push:**
+- Bowl tips through a readable arc and settles upright with a satisfying but gentle clink.
+- The food becomes accessible.
+- Dog approaches and eats with a joyful tail/body reaction.
+- Leo watches, blinks or gives a small proud/curious reaction.
+- A clear level-complete transition follows the payoff.
+
+**Audio:** Restrained paw tap, bowl rattle/clink, dog contentment sound and Leo's subtle cat vocalisation. No spoken dialogue.
+
+**Accessibility and device robustness:** The puzzle must be solvable without relying on colour alone; contact sides are differentiated by geometry and pose. Taps must register with generous hit areas and consistent feedback. Mouse click and touch tap must produce identical gameplay outcomes.
+
+### 34.7 Scope boundaries
+
+In scope:
+- One bowl, one dog, Leo.
+- One local paw-push interaction.
+- Two readable contact choices with distinct deterministic outcomes.
+- One successful object-state change and a character payoff.
+
+Out of scope:
+- Dragging or drawing the paw path.
+- Continuous arm/paw extension.
+- Moving hazards or timing windows.
+- Dog chase, bite, guard or stealth logic.
+- Multi-object chain reactions.
+- Inventory, scoring, stars, timers or resource systems.
+- Free-form physics simulation with unpredictable outcomes.
+
+### 34.8 Provisional originality rubric
+
+Scores use the Section 14 scale (0–3). These are provisional desk-review scores based on the written concept; they must be validated in a playable prototype and may be revised downward.
+
+| Criterion | Score | Rationale |
+|---|---:|---|
+| Player role | 3 | Leo acts as a helper solving a practical problem, not a thief obtaining a target |
+| Core interaction | 2 | Local paw contact and object rotation create a distinct decision from continuous reach-route drawing; the mechanic is simple and familiar, so 3 would overstate novelty |
+| Objective and structure | 2 | Restore an object to a usable state and resolve a cooperative situation rather than retrieve loot |
+| Leo-specificity | 2 | Paw contact, short feline movement and curious investigation are functionally relevant; the concept still needs a stronger test that Leo's traits are essential rather than interchangeable with any small animal |
+| Character payoff | 2 | Dog's relief and Leo's response create a situation-specific payoff, though it is a simple introductory beat |
+| Presentation | 2 | A distinct character-led backyard setup is proposed; final art composition has not been produced or compared |
+| Platform clarity | 3 | One large tap/click interaction, fixed camera and immediate feedback are suitable in principle for touch and mouse |
+
+**Total: 16/21.** The total is descriptive only; it is not a pass threshold.
+
+**Gatekeeper result:** Player role = 3 and Core interaction = 2. Neither triggers the automatic NO-GO rule. The concept provisionally passes the mandatory gate at desk-review stage. It is **not yet cleared for production** because the mechanic's distinctness and Leo-specificity require playtesting.
+
+### 34.9 Vertical-slice validation criteria
+
+The level should be tested with players who have not been told the solution. Record:
+- Whether they understand the dog's problem without text.
+- Whether they identify the bowl as the primary interaction object.
+- Whether they understand that tapping a side makes Leo push that side.
+- Whether the bowl's tilt provides enough information to choose an effective side.
+- Whether the result feels caused by the player's choice rather than random physics.
+- Whether the player can retry without confusion after an ineffective push.
+- Whether Leo's paw action reads clearly at phone scale.
+- Whether the level feels unlike a path-drawing/reach-to-target puzzle.
+
+**Proposed acceptance targets (to be confirmed during vertical-slice planning):**
+- At least 80% of first-time testers identify the bowl as the object to interact with without written instruction.
+- At least 70% choose the effective side on their first attempt from visual information alone.
+- At least 90% complete the level within 30 seconds after first interaction, excluding initial load time.
+- No tester needs to draw, drag or steer a path.
+- No physics outcome varies between repeated runs on the same build/device configuration.
+- Mouse and touch produce equivalent outcomes.
+
+These are proposed usability targets, not measured results.
+
+### 34.10 Risks and required design revisions if tests fail
+
+| Risk | Symptom | Revision |
+|---|---|---|
+| Triviality | Any tap solves it, so there is no meaningful decision | Improve the legibility of the two contact outcomes; do not add arbitrary complexity |
+| Guessing | Players tap randomly because the effective side is unclear | Refine bowl tilt, silhouette and dog/Leo gaze cues |
+| Unpredictable physics | Same input produces different rotations | Replace unconstrained physics with deterministic authored motion or constrained simulation |
+| Weak Leo identity | Any character could perform the action identically | Make paw placement, feline stance and curious investigation mechanically legible without adding unnecessary controls |
+| Decorative dog | Dog contributes no information or emotional consequence | Strengthen gaze/body-language communication and the post-solution response |
+| Competitor resemblance | Player describes the task as reaching around something to grab an object | Rework the interaction around contact, leverage and object-state change; remove any path-like UI or hand extension |
+
+### 34.11 Approval status and next gate
+
+- Direction selected by project owner: Paw-rock-the-bowl.
+- Complete level design proposal: documented here as v0.1.
+- Originality desk score: 16/21; Player role 3, Core interaction 2; mandatory gate provisionally passed.
+- Leo mechanic taxonomy: stress-tested conceptually through a local paw/object manipulation example; still a proposal, not a globally approved mechanic specification.
+- Level layout and interaction contract: proposed, not approved.
+- Playable prototype and user testing: not started.
+- Production backlog eligibility: not granted.
+- Game Design Bible 02: remains pending approval until the project owner reviews this proposal and the vertical-slice evidence validates its core interaction.
