@@ -21,6 +21,7 @@ This log records durable project decisions. New decisions are appended; supersed
 | D-015 | Difficulty progresses from accessible fundamentals (levels 1–10), to combinations of mechanics and observation (11–30), to challenging multi-step puzzles and creative situations (31–50). | Approved direction | Progression bands are a framework; validate individual levels for clarity, fairness and pacing. Precision timing is not the dominant skill. |
 | D-016 | The game uses unlimited retries, no limited lives, no energy system or waiting periods, quick puzzle restarts and contextual checkpoints where useful. | Approved direction | Failure consequences must be understandable; failure may be funny, but must not punish experimentation. Checkpoints are considered per level, not mandated everywhere. |
 | D-017 | Progression uses sequential level unlocks and chapter unlocks; completed levels are replayable; no mandatory currency economy is used. | Approved direction | Achievements or cosmetic rewards may be considered only if they improve the experience. Detailed unlock/save behaviour remains to be specified. |
+| D-018 | Plan the overall journey as 50 levels across five chapters, but do not make all 50 a fixed launch requirement; design all chapters, validate a representative vertical slice, then set launch scope based on quality, variety and production feasibility. | Approved | The 50-level figure is a planning target, not a committed launch count. |
 
 ## Decision record template
 
