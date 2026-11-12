@@ -29,6 +29,8 @@ This log records durable project decisions. New decisions are appended; supersed
 | D-023 | Approve the Conditional Pass for The Dog's Bowl greybox. | Approved (2026-11-12) | Owner explicitly accepts the documented residual evidence limitations in `docs/validation/dogs-bowl-greybox-gate-assessment-v1-0.md`. Scope is limited to the greybox gate; it does not approve detailed art, production implementation or release. |
 
 
+| D-024 | Formally approve Chapter 1, Level 2 — “The Kid's Glass” at the level-design stage. | Approved (2026-11-12) | Owner explicitly approved the formal level-design specification v1.0 after Formal Originality Review v1.0 (17/21; D-020 passed). Approval is limited to level design. It does not authorize greybox development/validation, detailed art or asset production, production implementation, or release; each requires a separate explicit approval. Authoritative specification: `docs/levels/chapter-01/level-02-kids-glass/level-design-v1-0.md`. |
+
 ## Decision record template
 
 For future entries, include:
