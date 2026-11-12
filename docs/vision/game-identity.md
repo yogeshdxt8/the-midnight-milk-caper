@@ -1,8 +1,8 @@
 # Game Design Bible 01 — Product Vision
 
 **Project:** The Midnight Milk Caper  
-**Document status:** Proposed — audience direction approved; remaining product decisions pending  
-**Version:** 0.2  
+**Document status:** Proposed — audience and milk-motivation directions approved; remaining product decisions pending  
+**Version:** 0.3  
 **Authority:** Game Design Bible; subordinate to current official platform requirements
 
 ## 1. Product statement
@@ -11,7 +11,7 @@ The Midnight Milk Caper is an original, character-driven casual adventure-puzzle
 
 Players directly guide Leo through compact, carefully authored adventures. Each level presents a readable situation, a clear immediate goal and a small set of meaningful interactions. The fun comes from understanding the situation, experimenting with the environment, expressing Leo's personality through play and discovering an amusing outcome.
 
-The game is not defined by stealing milk alone. Milk is Leo's recurring motivation and a recognizable narrative thread; the actual player activity must vary meaningfully from level to level.
+The game is not defined by stealing milk alone. Milk is Leo's signature motivation and the emotional thread connecting the game, but not every level is about obtaining milk. The actual player activity and immediate objective must vary meaningfully from level to level.
 
 ## 2. Product promise
 
@@ -69,7 +69,8 @@ Leo is the central protagonist and the player's primary avatar.
 Current approved direction:
 - Leo is a domestic calico kitten.
 - His personality is cute, innocent, curious, playful and occasionally clumsy.
-- He loves milk.
+- He loves milk; this is his signature motivation and the emotional thread across the game.
+- Not every level requires the player to obtain milk. Some levels may focus on helping another character, exploring, responding to an unexpected event or solving a situation, while keeping Leo's personality and broader motivation present in the experience.
 - He wears a permanent red collar with a golden bell.
 - He does not speak; he communicates through expressive cat sounds.
 - The player directly controls Leo in most levels.
@@ -182,16 +183,16 @@ Unless separately approved, the product is not intended to become:
 
 ## 14. Open decisions for approval
 
-1. **Milk as motivation:** Should milk remain Leo's signature recurring motivation while some levels have objectives that are not literally about obtaining milk?
-2. **Level duration:** Should the initial design target be approximately 1–3 minutes per level, subject to playtesting?
-3. **Difficulty:** Should the game start extremely accessible and build toward clever multi-step challenges without requiring precision timing as the dominant skill?
-4. **Failure model:** Should most levels allow immediate retries/checkpoints rather than limited lives?
-5. **Progression:** Should chapter/level completion be the primary progression system, with no currency economy unless a concrete design need is established?
-6. **Scope:** Is 50 levels a fixed launch target or a planning target that can be adjusted after vertical-slice validation?
+1. **Level duration:** Should the initial design target be approximately 1–3 minutes per level, subject to playtesting?
+2. **Difficulty:** Should the game start extremely accessible and build toward clever multi-step challenges without requiring precision timing as the dominant skill?
+3. **Failure model:** Should most levels allow immediate retries/checkpoints rather than limited lives?
+4. **Progression:** Should chapter/level completion be the primary progression system, with no currency economy unless a concrete design need is established?
+5. **Scope:** Is 50 levels a fixed launch target or a planning target that can be adjusted after vertical-slice validation?
 
 ## 15. Approval record
 
 - Audience positioning: Approved — broad casual audience, 13+.
+- Milk motivation: Approved — signature motivation and emotional thread; not every level requires obtaining milk.
 - Remaining product vision approval: Pending.
 - Date approved: Pending.
 - Changes required: Remaining open decisions above.
