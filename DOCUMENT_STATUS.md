@@ -25,6 +25,7 @@ This register is the index of authoritative project specifications and their app
 | YouTube Playables baseline | `docs/platform/` | Mandatory internal baseline adopted | Reconcile with current official Google requirements before implementation. |
 | Asset and audio registers | `assets/` | Not started | Establish naming, ownership, status and budget metadata. |
 | Quality and release plan | `docs/release/` | Not started | Define device matrix, acceptance gates and release checks. |
+| Dog's Bowl greybox v0.5 | `docs/levels/chapter-01/level-01-dogs-bowl/` (prototype artifacts currently in Library) | **Visual baseline frozen; validation in progress** | Do not redesign frozen facet treatment, Leo stance, starting pose, rolling trajectory or final position. Validate floor-contact progression, 20/20 deterministic repeatability and touch/mouse parity; capture evidence and obtain owner gate approval. |
 
 ## Approval rule
 
@@ -62,3 +63,6 @@ A document is not approved merely because it exists, has been generated, or has 
 - 2026-11-12: Project owner accepted the greybox interaction test as the next design gate for The Dog's Bowl. Game Design Bible 02 v1.3 defines minimum greybox contents, static stability/contact/roll/final-rest tests, 20-run repeatability and input-parity checks, readability targets, evidence package and pass/conditional/fail outcomes. Gate is defined but not executed; no prototype validation or production approval is claimed. Detailed art remains blocked.
 
 - 2026-11-12: Created a standalone browser-based greybox interaction prototype `dogs_bowl_greybox_v0_1.html` (plus ZIP package) with primitive bowl, floor, Leo proxy, dog proxy, paw-contact guide, tap/click trigger, reset and deterministic authored roll animation. This is a visual interaction study only: it is not a rigid-body physics validation, has not passed the defined greybox gate, and does not authorize detailed art or production implementation. Prototype delivered to project owner for inspection.
+
+
+- 2026-11-12: Project owner froze The Dog's Bowl greybox v0.5 visual baseline: flattened facet treatment, Leo's compact stance/push-and-release, starting pose, rolling trajectory and final upright position. No further visual redesign is authorized. Remaining work is validation of bowl floor-contact progression, deterministic repeatability (20 identical reset trials) and touch/mouse parity. This is not a greybox gate pass; detailed art and production remain blocked pending evidence and explicit owner approval.
