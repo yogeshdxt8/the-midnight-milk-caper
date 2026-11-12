@@ -55,3 +55,6 @@ For future entries, include:
 - **Approver**
 
 Do not infer approval from silence or from a generated concept image.
+
+
+| D-030 | Authorize The Kid's Glass greybox v0.8.2 late-only rescue-window refinement. | Approved (2026-11-12) | Owner accepted the recommendation for a short, humanly achievable 1.0-second rescue window. The glass must first reach its late table-edge position; rescue is actionable only during the 1.0-second NearEdge hesitation. Earlier taps receive acknowledgement but are not queued. A valid tap immediately starts Leo's reach; a missed window proceeds to fall and shatter. Preserve randomized per-attempt slide speed, progressive danger effects, Leo-only input and existing level objective. This authorizes only low-fidelity greybox implementation and validation; no detailed art/assets, production integration, monetization, persistence or release. Engineering note: `docs/validation/kids-glass-greybox-engineering-v0-8-2.md`.
