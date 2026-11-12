@@ -1,8 +1,8 @@
 # Game Design Bible 02 — Originality and Competitive Research
 
 **Project:** The Midnight Milk Caper  
-**Document status:** Research draft — expanded competitor evidence and originality framework; not approved  
-**Version:** 0.5  
+**Document status:** Research draft — YouTube Playables is the primary platform and competitor-evidence environment; not approved  
+**Version:** 0.6  
 **Research note:** This is a design-risk assessment, not legal advice or a clearance opinion. Competitor descriptions are based on linked store/publisher sources and secondary gameplay references where identified. Broad product descriptions do not prove every mechanic; direct playthrough review remains necessary. The scan is not exhaustive.
 
 ## 1. Purpose
@@ -504,9 +504,9 @@ Before a level uses a mechanic:
 
 ### Next evidence pass
 
-The next pass should annotate a small but deliberate sample from the current mobile build (or a clearly identified browser build): early tutorial levels, several middle levels introducing new obstacle combinations, and later levels combining moving hazards. Record level identifier/build, objective, player input, obstacle/hazard, timing, failure condition, success feedback, retries and whether the level adds a genuinely new decision or merely rearranges known elements.
+The next pass must prioritize the **YouTube Playables build**, because YouTube Playables is the project's primary product and release target. Sample early, middle and later levels from that same Playables build. Record the level identifier/build where available, objective, player input, obstacle/hazard, timing, failure condition, success feedback, retries and whether the level adds a genuinely new decision or merely rearranges known elements.
 
-Do not compare level numbers across versions unless the build and sequence are confirmed.
+Native mobile and Famobi browser versions are secondary references only. Their observations must be labelled by build/source and must not be merged into the Playables evidence set or treated as proof of parity. Do not compare level numbers across versions unless the build and sequence are confirmed.
 
 ## 24. Approval record
 
@@ -596,7 +596,7 @@ For Leo, route planning may appear as a small supporting decision in a level, bu
 
 ### Next step after this browser audit
 
-The remaining evidence gap is not another broad web summary. It is a controlled hands-on sample of the actual mobile build the project wants to use as its reference. Record the app version/build and capture early, middle and later levels. If the user supplies screenshots or screen recordings, annotate those exact samples. Do not silently merge observations from unrelated browser clones or similarly named games.
+The remaining evidence gap is a controlled sample of the **YouTube Playables build**. The user has supplied a gameplay recording covering Levels 1–9; this is the first Playables evidence sample. The next research milestone is to annotate middle and later Playables levels, ideally around Levels 15–20 and 35–40, from the same build where possible. Record the source/build identity and annotate the exact supplied footage. Native mobile and Famobi browser builds remain secondary context only; do not silently merge their observations into the Playables sample.
 
 ## 27. Approval record
 
@@ -604,4 +604,43 @@ The remaining evidence gap is not another broad web summary. It is a controlled 
 - Product owner approval: Pending
 - Date approved: Pending
 - Version reviewed: 0.5
-- Changes required: Complete version-identified hands-on sampling of the current TapNation mobile app (or explicitly choose a specific Famobi browser build as the sole reference); then refine Leo's mechanic taxonomy before any candidate-level audit.
+- Changes required: Complete the YouTube Playables evidence sample, including middle and later levels; refine Leo's mechanic taxonomy from the observed Playables interactions; then audit candidate level concepts. Native mobile and Famobi evidence is secondary only.
+
+
+## 28. YouTube Playables — primary platform and evidence scope
+
+### 28.1 Locked research priority
+
+YouTube Playables is the primary product, release target and reference environment for this project. Consequently, the primary competitor sample for Thief Puzzle is its YouTube Playables build. This scope decision governs the evidence hierarchy in this document.
+
+- **Primary:** Thief Puzzle on YouTube Playables.
+- **Primary evidence supplied:** User-provided YouTube Playables gameplay recording covering Levels 1–9.
+- **Next evidence milestone:** Middle levels (approximately 15–20) and later levels (approximately 35–40), preferably from the same Playables build.
+- **Secondary context only:** TapNation native mobile and Famobi-hosted browser versions. Their mechanics may provide useful context, but their level sequences, controls, physics and failure rules must not be assumed identical to Playables.
+
+### 28.2 Initial supplied sample — Levels 1–9
+
+The user identified the uploaded recording as YouTube Playables gameplay. The initial review noted scene-level variation across the sampled sequence, including direct target access, scenes with nearby characters, environmental props, social situations, multiple possible targets and comic outcomes. These are preliminary footage observations, not yet a complete frame-by-frame mechanic audit.
+
+The next annotation pass must distinguish:
+- A genuinely new player action or decision.
+- A new obstacle/hazard arrangement within an existing interaction.
+- A new objective or social situation using the same interaction.
+- A presentation-only variation that does not change the decision.
+
+Do not infer the exact control grammar, failure logic or version parity beyond what the supplied footage visibly establishes.
+
+### 28.3 Platform-specific research implications
+
+All originality and usability comparisons must prioritize the Playables experience:
+- Touch interaction and mouse parity.
+- Immediate comprehension in the Playables viewport.
+- Level pacing, retries and feedback as implemented in the Playables build.
+- The actual sequence in which that build introduces and combines mechanics.
+- Whether apparent variety changes player decisions or only changes scene dressing.
+
+The Famobi browser audit in Section 25 remains useful as a separately labelled secondary reference. It is not a substitute for Playables evidence.
+
+### 28.4 Research gate
+
+Game Design Bible 02 remains a research draft and is not approved. The next milestone is the middle and later YouTube Playables samples. After those samples are annotated, refine the proposed Leo mechanic taxonomy against the observed interaction patterns. Only then begin the candidate-level originality audit.
