@@ -25,7 +25,7 @@ This register is the index of authoritative project specifications and their app
 | YouTube Playables baseline | `docs/platform/` | Mandatory internal baseline adopted | Reconcile with current official Google requirements before implementation. |
 | Asset and audio registers | `assets/` | Not started | Establish naming, ownership, status and budget metadata. |
 | Quality and release plan | `docs/release/` | Not started | Define device matrix, acceptance gates and release checks. |
-| The Kid's Glass — Chapter 1, Level 2 | `docs/levels/chapter-01/level-02-kids-glass/level-design-v1-0.md`; greybox plan: `docs/validation/kids-glass-greybox-plan-v1-0.md` | **Level design approved (D-024); greybox development authorized (D-025), in progress.** | Build and validate low-fidelity playable greybox against plan. Detailed art/assets, production implementation/integration and release remain unauthorized. |
+| The Kid's Glass — Chapter 1, Level 2 | `docs/levels/chapter-01/level-02-kids-glass/level-design-v1-0.md`; greybox plan: `docs/validation/kids-glass-greybox-plan-v1-0.md` | **Level design approved (D-024); greybox development authorized (D-025). Initial playable greybox v0.1 created; scripted engineering smoke tests passed; greybox gate OPEN.** | Perform desktop and Android browser review, record touch/mouse runs, repeatability and readability evidence, then prepare gate assessment. Detailed art/assets, production implementation/integration and release remain unauthorized. |
 | Dog's Bowl greybox v0.5 | `docs/levels/chapter-01/level-01-dogs-bowl/`; engineering report: `docs/validation/dogs-bowl-greybox-engineering-v3-1.md`; gate assessment: `docs/validation/dogs-bowl-greybox-gate-assessment-v1-0.md` | **Conditional Pass — explicitly approved by project owner (2026-11-12)** | Greybox gate disposition recorded. v3.2.1 full-bowl hit area remains frozen; input-validation workstream closed. The owner accepts the documented residual evidence limitations. This approval is limited to the greybox gate; detailed art, production implementation and release remain unapproved and require separate explicit approvals. |
 
 ## Approval rule
@@ -33,6 +33,8 @@ This register is the index of authoritative project specifications and their app
 A document is not approved merely because it exists, has been generated, or has been committed. The project owner must explicitly approve it, and its status must be updated here.
 
 ## Change history
+
+- 2026-11-12: Created The Kid's Glass greybox plan v1.0, playable prototype v0.1 and engineering report v0.1 under D-025. Scripted smoke tests passed for early/middle/late-valid saves, no-input failure and ignored pre-slide input. Real-device/browser visual review, touch/mouse evidence and readability testing remain outstanding; greybox gate remains OPEN. Detailed art and production implementation remain unauthorized.
 
 - 2026-11-12: Project owner explicitly authorized greybox development for The Kid's Glass. Recorded D-025 and added `docs/validation/kids-glass-greybox-plan-v1-0.md`. Scope is limited to a primitive playable greybox and validation; detailed art, production implementation and release remain unauthorized.
 
