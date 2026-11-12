@@ -2,7 +2,7 @@
 
 **Project:** The Midnight Milk Caper  
 **Document status:** Research draft — YouTube Playables is the primary platform and competitor-evidence environment; not approved  
-**Version:** 1.1  
+**Version:** 1.2  
 **Research note:** This is a design-risk assessment, not legal advice or a clearance opinion. Competitor descriptions are based on linked store/publisher sources and secondary gameplay references where identified. Broad product descriptions do not prove every mechanic; direct playthrough review remains necessary. The scan is not exhaustive.
 
 ## 1. Purpose
@@ -1112,3 +1112,108 @@ These are proposed usability targets, not measured results.
 - Playable prototype and user testing: not started.
 - Production backlog eligibility: not granted.
 - Game Design Bible 02: remains pending approval until the project owner reviews this proposal and the vertical-slice evidence validates its core interaction.
+
+
+## 35. Revised physical interaction specification — Paw-rock-the-bowl v0.2
+
+**This section supersedes the physical assumptions in Sections 34.2 and 34.3 wherever they conflict.** The selected direction remains Paw-rock-the-bowl. This revision corrects an ambiguity in the earlier proposal: a bowl resting flat on its circular rim does not naturally offer a visually obvious “left side/right side” solution. The level must not teach arbitrary hotspot guessing.
+
+### 35.1 Corrected initial geometry
+
+The bowl is **not perfectly upside down and flat on its rim**. It is overturned and resting obliquely on the curved outer wall, with one section of its rim touching the floor and the opposite rim visibly raised. Its opening is angled partly away from the dog. The bowl is stable in this tilted pose because its curved wall and rim create a clear resting contact.
+
+This pose is intentionally chosen because it gives the player a visible roll direction. The player sees:
+- the raised curved side that Leo can push;
+- the lower floor-contact side acting as the current pivot/rolling contact;
+- the direction in which the bowl can roll;
+- the opening, which is not yet facing upward.
+
+The bowl must be large and simple enough for the silhouette and contact relationship to read on a phone screen.
+
+### 35.2 Physical action and player input
+
+**Input:** one tap/click on the clearly indicated broad push zone on the raised outer wall of the bowl.
+
+**Action:** Leo approaches only as far as needed, plants his hind paws, lowers his shoulders, braces his body and makes one short forward paw shove against the raised curved wall. The paw remains in contact only for the authored push animation; it does not extend, stretch or travel along a drawn path.
+
+**Mechanical interpretation:** the push applies a controlled tangential impulse to the bowl's curved outer wall. The floor contact acts as the initial pivot/rolling contact. The impulse causes the bowl to roll around its curved wall and rim through a controlled arc until its base is on the floor and its opening faces upward.
+
+The player is not choosing between arbitrary left/right hotspots. The level teaches one clear contact-and-roll relationship. The decision is whether and where to apply the visible push to produce the required object-state change.
+
+### 35.3 Deterministic outcome model
+
+The production implementation should use a deterministic authored motion or a constrained kinematic/physics hybrid. It must not rely on unconstrained rigid-body simulation.
+
+- Valid contact starts a single authored roll sequence.
+- Bowl rotation follows a fixed arc from tilted-inverted to upright.
+- The bowl translates a short, controlled distance along the floor as it rolls.
+- The bowl settles with its base flat on the floor, opening upward and food visible.
+- Leo's animation, paw contact frame, bowl movement and sound are synchronized.
+- The final pose is fixed and repeatable across frame rates and supported devices.
+
+There is **no weak-side versus strong-side binary outcome** in this revision. The earlier two-zone outcome proposal is removed because it implied a choice without a sufficiently grounded physical explanation.
+
+If the player taps outside the valid push zone, nothing in the puzzle state changes; Leo may glance at the bowl. A generous interaction target is required. Once a valid push begins, ignore further input until the roll and settling animation finish.
+
+### 35.4 Teaching the causal relationship
+
+The initial scene must communicate the action without requiring a text instruction:
+1. The dog looks at the bowl and then toward Leo.
+2. Leo looks at the bowl's raised curved wall.
+3. Leo shifts his weight and raises a paw toward that surface.
+4. A subtle pulse may appear on the broad contact region only after a short idle period.
+5. The player taps/clicks; Leo braces and pushes.
+6. The bowl visibly rolls in the direction of the shove and settles upright.
+
+Do not display a trajectory line, hand path, arrow route or draggable endpoint. The visual cue should identify the contact surface, not prescribe a route through space.
+
+### 35.5 Physics plausibility and animation guardrails
+
+This is a stylized casual puzzle, not a physics simulator. The result should look physically coherent while remaining deterministic.
+
+- The bowl's centre of mass, curved wall and rim contact should be consistent with the direction of rotation shown.
+- The bowl must not appear to teleport, snap through the floor, spin without contact or rotate around an invisible axis.
+- The contact point should visibly precede the start of bowl motion.
+- The bowl's movement should be a single continuous roll, not a sequence of unrelated rotations.
+- A small floor sound/impact can reinforce the changing contact point.
+- The animation must end in a stable upright pose without wobble that obscures whether the puzzle is solved.
+
+A short reference animation/greybox test should be reviewed before detailed art production. If the motion cannot be made visually convincing, revise the bowl's starting pose or roll arc rather than adding hidden forces or random physics.
+
+### 35.6 Revised state machine
+
+| State | World and character state | Input |
+|---|---|---|
+| S0 — Observe | Bowl rests obliquely on curved wall/rim; dog waits; Leo notices the raised wall | Tap/click the broad push zone |
+| S1 — Brace | Leo plants hind paws, lowers shoulders and reaches paw to the contact surface | Locked |
+| S2 — Push and roll | Paw makes contact; bowl rolls continuously along its curved wall/rim | Locked |
+| S3 — Settle upright | Bowl's base contacts floor; opening faces upward; food becomes accessible | Locked |
+| S4 — Character payoff | Dog approaches and eats; Leo reacts | No puzzle input |
+| S5 — Complete | Success feedback and level transition | Standard level flow |
+
+There is no failed-push state in the primary version. The level teaches one observable action and confirms its effect. Repeated input after the action begins is ignored. A missed tap produces only a harmless idle response and allows another attempt.
+
+### 35.7 Revised originality implications
+
+The concept still differs from the competitor's reach-route grammar:
+- no distant target retrieval;
+- no continuous limb extension;
+- no route tracing or obstacle navigation;
+- one local contact action changes an object's physical state;
+- the dog's need and Leo's helping role define the objective.
+
+However, the revised version is a **single-action introductory interaction**, not a complex puzzle. Its originality strength lies in the embodied character interaction and object-state change, not in claiming that pushing or rolling objects is itself novel.
+
+### 35.8 Review status
+
+- Direction: Paw-rock-the-bowl — retained.
+- Initial geometry: corrected to an overturned bowl resting obliquely on its curved wall/rim.
+- Input: one tap/click on a broad contact zone.
+- Action: Leo braces and performs one paw shove.
+- Result: deterministic continuous roll to upright state.
+- Two-hotspot weak/strong outcome: removed.
+- Free-form physics: prohibited for this level.
+- Interaction contract: revised proposal v0.2; awaiting owner review.
+- Greybox/animation validation: not performed.
+- Originality score: retain the provisional 16/21 only as a preliminary desk assessment; the Core interaction score of 2 is conditional on the revised interaction reading distinctly in play.
+- Production approval: not granted.
