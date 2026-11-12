@@ -25,7 +25,7 @@ This register is the index of authoritative project specifications and their app
 | YouTube Playables baseline | `docs/platform/` | Mandatory internal baseline adopted | Reconcile with current official Google requirements before implementation. |
 | Asset and audio registers | `assets/` | Not started | Establish naming, ownership, status and budget metadata. |
 | Quality and release plan | `docs/release/` | Not started | Define device matrix, acceptance gates and release checks. |
-| Dog's Bowl greybox v0.5 | `docs/levels/chapter-01/level-01-dogs-bowl/` (prototype artifacts currently in Library) | **Visual baseline frozen; validation in progress** | Do not redesign frozen facet treatment, Leo stance, starting pose, rolling trajectory or final position. Validate floor-contact progression, 20/20 deterministic repeatability and touch/mouse parity; capture evidence and obtain owner gate approval. |
+| Dog's Bowl greybox v0.5 | `docs/levels/chapter-01/level-01-dogs-bowl/` (prototype artifacts currently in Library); engineering report: `docs/validation/dogs-bowl-greybox-engineering-v3-1.md` | **Visual baseline frozen; engineering validation v3.1 completed at script/offline-analysis level; greybox gate OPEN** | Run one targeted real-browser smoke test of v3.1 (interaction, CSV download/readability and visual baseline). No repeat 20-run test or additional mouse recording requested. Then review evidence and obtain explicit owner gate approval. |
 
 ## Approval rule
 
@@ -66,3 +66,5 @@ A document is not approved merely because it exists, has been generated, or has 
 
 
 - 2026-11-12: Project owner froze The Dog's Bowl greybox v0.5 visual baseline: flattened facet treatment, Leo's compact stance/push-and-release, starting pose, rolling trajectory and final upright position. No further visual redesign is authorized. Remaining work is validation of bowl floor-contact progression, deterministic repeatability (20 identical reset trials) and touch/mouse parity. This is not a greybox gate pass; detailed art and production remain blocked pending evidence and explicit owner approval.
+
+- 2026-11-12: Recorded D-022: The Dog's Bowl uses deterministic kinematic animation; exact no-slip rigid-body rolling is not required. Engineering validation v3.1 corrected CSV line endings, audited support geometry/contact diagnostics, ran a dense offline support sweep, reanalysed two touch and one mouse recording, and confirmed frozen visual source/trajectory regression. Script-level CSV test passed; real-browser download/render smoke test remains pending. Greybox gate remains OPEN; no additional 20-run or mouse recording requested.
