@@ -15,7 +15,7 @@ This register is the index of authoritative project specifications and their app
 | Document / workstream | Location | Current status | Next action |
 |---|---|---|---|
 | Product Vision — Game Design Bible 01 | `docs/vision/game-identity.md` | **Approved v0.9** | Proceed to Game Design Bible 02 — Originality Research; retain normal change control for future revisions. |
-| Originality Research — Game Design Bible 02 | `docs/research/originality-and-competitor-review.md` | Research draft v0.9; YouTube Playables primary; Levels 1–20 interaction taxonomy completed; refined Leo mechanic taxonomy proposal v0.2; not approved | Review and approve/revise the taxonomy direction; then begin candidate-level originality audit. Levels 35–40 remain excluded from this research pass. |
+| Originality Research — Game Design Bible 02 | `docs/research/originality-and-competitor-review.md` | **Review draft v1.4; not approved as a whole**. Reconciles approved originality gate D-020, bounded Playables Levels 1–20 evidence, proposed Leo taxonomy v0.2, and Dog's Bowl Conditional Pass D-023. | Complete candidate-level originality audit against actual repository concepts, then submit Bible 02 for explicit owner review. Levels 35–40 remain excluded. |
 | Character Bible — Leo | `docs/characters/leo-character-bible.md` | Approved direction; detailed spec in progress | Finalize identity and technical character specifications. |
 | World and location Bible | `docs/characters/` and `docs/levels/` | Not started | Define recurring locations and continuity rules. |
 | Gameplay and interaction systems | `docs/game-design/` | Not started | Define controls, interaction taxonomy and reusable systems. |
@@ -72,3 +72,5 @@ A document is not approved merely because it exists, has been generated, or has 
 - 2026-11-12: Added Dog's Bowl Greybox Gate Assessment v1.0. Recommendation: CONDITIONAL PASS. Full-bowl touch target and four mouse runs are supported by evidence; observer-readability quantification and formal frozen-frame comparison remain incomplete. Gate awaits explicit owner disposition; input-validation workstream is ready to close.
 
 - 2026-11-12: Project owner explicitly approved the Conditional Pass for The Dog's Bowl greybox. Approval is limited to the greybox gate and accepts the two documented evidence limitations; it does not authorize detailed art, production implementation or release. Recorded as Decision Log D-023 and in the gate assessment approver disposition.
+
+- 2026-11-12: Game Design Bible 02 consolidated as v1.4 review draft. Reconciles the mandatory D-020 originality gate, Levels 1–20 Playables evidence boundary, proposed Leo mechanic taxonomy and Dog's Bowl greybox Conditional Pass under D-023. Bible 02 remains unapproved; candidate-level originality audit is the next action.
